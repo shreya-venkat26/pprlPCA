@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pprl"
+version = "0.1"
+authors = [
+    {name = "Nikolai Franke", email = "nikolai.franke@student.kit.edu"},
+    {name = "Balazs Gyenes", email = "balazs.gyenes@kit.edu"},
+]
+description = "PointPatchRL, reinforcement learning on point clouds"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+packages = ["pprl"]
+
+[tool.pyright]
+reportGeneralTypeIssues = "warning"
+exclude = ["**/wandb", "**/outputs", "**/log_data", "**/imgs"]

@@ -1,0 +1,6 @@
+[submodule "dependencies/parllel"]
+	path = dependencies/parllel
+	url = git@github.com:balazsgyenes/parllel.git
+[submodule "dependencies/sofa_env"]
+	path = dependencies/sofa_env
+	url = git@github.com:balazsgyenes/sofa_env.git

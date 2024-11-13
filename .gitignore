@@ -1,0 +1,24 @@
+# logging folders
+log_data/
+videos/
+
+# hydra folders
+multirun/
+outputs/
+
+# wandb folders
+artifacts/
+wandb/
+
+# assets for maniskill2 envs
+/data/
+
+# ini file from maniskill2 rendering
+/imgui.ini
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+build/
+*.egg-info/

@@ -1,0 +1,13 @@
+defaults:
+  - maniskill2
+  - _self_
+
+name: TurnFaucet
+env_id: TurnFaucet-v1
+env_kwargs:
+  control_mode: pd_joint_delta_pos
+  n_models: 10
+pcd_kwargs:
+  max_expected_num_points: 800
+  random_downsample: 800
+min_num_points: 32
