@@ -1,0 +1,26 @@
+#!/bin/bash
+FOLDER_SRC=$HOME/sofa/src
+FOLDER_TARGET=$HOME/sofa/build
+FOLDER_SP3=$FOLDER_SRC/applications/plugins/SofaPython3
+PYTHON_PKG_PATH=$(python3 -c 'import sysconfig; print(sysconfig.get_paths()["purelib"])')
+PYTHON_EXE=$(which python3)
+PYTHON_ROOT_DIR=$CONDA_PREFIX
+export CC=$CONDA_PREFIX/bin/cc
+export CXX=$CONDA_PREFIX/bin/c++
+export CMAKE_PREFIX_PATH=$CONDA_PREFIX
+
+
+cmake -Wno-dev \
+-S $FOLDER_SRC -B $FOLDER_TARGET \
+-DCMAKE_BUILD_TYPE=Release \
+-DSOFA_FETCH_SOFAPYTHON3=OFF \
+-DPLUGIN_SOFAPYTHON3=ON \
+-DPython_EXECUTABLE=$PYTHON_EXE \
+-DPython_ROOT_DIR=$PYTHON_ROOT_DIR \
+-DSP3_LINK_TO_USER_SITE=ON \
+-DSP3_PYTHON_PACKAGES_LINK_DIRECTORY=$PYTHON_PKG_PATH \
+-DPLUGIN_SOFACARVING=ON \
+-DSP3_BUILD_TEST=OFF \
+-DSOFA_BUILD_TESTS=OFF
+
+cmake --build $FOLDER_TARGET -j --target install

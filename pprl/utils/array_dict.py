@@ -25,6 +25,26 @@ def dict_to_batched_data(
     )
     return pos, batch, features
 
+def dict_to_batched_data_pca(
+    points, ptr
+):
+    """Convert an ArrayDict with `pos` and `ptr` Tensors to pyg convention
+    with `pos`, `batch`, and `feature` Tensors.
+    """
+
+    num_nodes = ptr[1:] - ptr[:-1]
+    pos = points[..., :3]
+    # features = points[..., 3:] if points.shape[-1] > 3 else None
+    if points.shape[-1] > 3:
+        print("FEATURES")
+        exit()
+
+    batch = torch.repeat_interleave(
+        torch.arange(len(num_nodes), device=num_nodes.device),
+        repeats=num_nodes,
+    )
+    return pos, batch
+
 
 def build_obs_array(
     example_obs: ArrayOrMapping[np.ndarray],

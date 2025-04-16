@@ -26,6 +26,8 @@ from parllel.types import BatchSpec
 
 from pprl.utils.array_dict import build_obs_array
 
+from omegaconf import OmegaConf
+
 
 @contextmanager
 def build(config: DictConfig) -> Iterator[RLRunner]:
@@ -33,6 +35,8 @@ def build(config: DictConfig) -> Iterator[RLRunner]:
     discount = config.algo.discount
     batch_spec = BatchSpec(config.batch_T, config.batch_B)
     storage = "shared" if parallel else "local"
+
+    """TRAIN CAGE"""
 
     with open_dict(config.env):
         config.env.pop("name")
@@ -49,6 +53,17 @@ def build(config: DictConfig) -> Iterator[RLRunner]:
         TrajInfoClass=TrajInfoClass,
         parallel=parallel,
     )
+
+    """EVAL CAGE"""
+
+    # eval_cfg = OmegaConf.create(OmegaConf.to_container(config.env, resolve=True))
+    #
+    # eval_cfg["env_kwargs"]["camera_cfgs"]["p"] = [0, 0, 2]
+    # eval_cfg["env_kwargs"]["camera_cfgs"]["q"] = [1., 0., 0., 0.] 
+    # eval_cfg["env_kwargs"]["camera_cfgs"]["uid"] = "fixed_view"
+
+    # eval_factory = instantiate(config.env, _convert_="partial", _partial_=True)
+
     eval_cages, eval_metadata = build_cages(
         EnvClass=env_factory,
         n_envs=config.eval.n_eval_envs,
@@ -56,6 +71,14 @@ def build(config: DictConfig) -> Iterator[RLRunner]:
         TrajInfoClass=TrajInfoClass,
         parallel=parallel,
     )
+
+    # eval_cages, eval_metadata = build_cages(
+    #     EnvClass=env_factory,
+    #     n_envs=config.eval.n_eval_envs,
+    #     env_kwargs={"add_rendering_to_info": True},
+    #     TrajInfoClass=TrajInfoClass,
+    #     parallel=parallel,
+    # )
 
     replay_length = int(config.algo.replay_length) // batch_spec.B
     replay_length = (replay_length // batch_spec.T) * batch_spec.T

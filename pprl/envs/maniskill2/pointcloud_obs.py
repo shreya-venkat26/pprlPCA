@@ -146,7 +146,17 @@ class PointCloudWrapper(gym.ObservationWrapper):
 
         pcd = self.pointcloud(observation)
 
+        centered = pcd[:, :3] - pcd[:, :3].mean(axis=0, keepdims=True)
+        _, _, vh = np.linalg.svd(centered, full_matrices=False)
+        components = vh.astype(np.float32)  # shape (3, 3)
+        # dummy = np.array([[-999, -999, -999]])
+
+        pcd = np.concatenate([pcd, components], axis=0)
+        # pcd = np.concatenate([pcd, dummy], axis=0)
+
         if self.points_only:
+            print('POINTS ONLY')
+            exit()
             return pcd
         else:
             state = spaces.flatten(
@@ -159,6 +169,7 @@ class PointCloudWrapper(gym.ObservationWrapper):
             }
 
     def pointcloud(self, observation) -> np.ndarray:
+
         point_cloud = observation["pointcloud"]["xyzw"]
         if self.exclude_handle_points:
             mesh_segmentation = observation["pointcloud"]["Segmentation"][..., 0]
@@ -262,6 +273,21 @@ class PointCloudWrapper(gym.ObservationWrapper):
             scale = 0.999999 / np.abs(pos).max()
             pos[...] *= scale
 
+        pca = False
+        # print(point_cloud)
+        # exit()
+        if pca:
+            # Append PCA components as fake points
+            centered = point_cloud[:, :3] - point_cloud[:, :3].mean(axis=0, keepdims=True)
+            _, _, vh = np.linalg.svd(centered, full_matrices=False)
+            components = vh.astype(np.float32)  # shape (3, 3)
+
+
+            # Concatenate to point cloud
+            point_cloud = np.concatenate([point_cloud, components], axis=0)
+            dummy = np.array([[-100, -100, -100]])
+            point_cloud = np.concatenate(([point_cloud, dummy]), axis=0)
+
         return point_cloud
 
 
@@ -343,6 +369,7 @@ class FrameStackWrapper(gym.ObservationWrapper):
         return np.concatenate(self.frames)
 
     def step(self, action):
+
         observation, reward, terminated, truncated, info = self.env.step(action)
 
         if isinstance(observation, dict):

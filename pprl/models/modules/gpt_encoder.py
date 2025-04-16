@@ -92,6 +92,7 @@ class GPTEncoder(nn.Module):
         return overall_mask.bool().to(center.device)
 
     def forward(self, x, center_points):
+
         padding_mask = torch.all(center_points == self.padding_value, dim=-1)
 
         batch_size, max_num_groups, *_ = x.shape

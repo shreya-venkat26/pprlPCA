@@ -11,7 +11,7 @@ from torch import Tensor
 from pprl.envs import PointCloudSpace
 from pprl.models.modules.tokenizer import Tokenizer
 from pprl.models.modules.transformer import SequencePooling, TransformerEncoder
-from pprl.utils.array_dict import dict_to_batched_data
+from pprl.utils.array_dict import dict_to_batched_data, dict_to_batched_data_pca
 
 
 class PointPatchTransformer(nn.Module):
@@ -59,14 +59,59 @@ class PointPatchTransformer(nn.Module):
             self.state_dim = 0
 
     def forward(self, observation: ArrayTree[Tensor]) -> Tensor:
+
+
         point_cloud: ArrayTree[Tensor] = (
             observation["points"] if self.obs_is_dict else observation
         )
-        pos, batch, color = dict_to_batched_data(point_cloud)  # type: ignore
+
+
+        # if not self.obs_is_dict:
+        #     print('ERROR OBS IS NOT DICT IN PPT.PY')
+            # exit()
+
+        points, ptr = point_cloud["pos"], point_cloud["ptr"]
+
+        # preprocessing points to be PCA canonicalized
+
+
+        correct_points_list = [
+            points[ptr[i] : ptr[i+1] - 3, :3]
+            for i in range(len(ptr) - 1)
+        ] 
+
+        pca_basis_list = [
+            points[ptr[i+1] - 3 : ptr[i+1], :3].T
+            for i in range(len(ptr) - 1)
+        ]
+
+        pca_bases = torch.stack(pca_basis_list, dim = 0)
+        pca_bases *= (torch.randint(0, 2, (len(pca_basis_list), 3), device=pca_bases.device) * 2 - 1).unsqueeze(1)
+
+        """
+        VERY IMPORTANT, PCA COLUMNS ARE THE BASES, AND ORTHOGONALITY HAS BEEN VERIFIED
+        """
+
+        pca_basis_list = list(pca_bases)
+
+        rotated_list = [point_cloud @ pca_basis for point_cloud, pca_basis in zip(correct_points_list, pca_basis_list)]
+
+        rotated_flat = torch.cat(rotated_list, dim=0)
+
+        ptr_shifted = ptr.clone()
+        for i in range(1, len(ptr)):
+            ptr_shifted[i] = ptr[i] - 3 * i
+
+        # pos, batch, color = dict_to_batched_data(point_cloud)  # type: ignore
+        pos, batch = dict_to_batched_data_pca(rotated_flat, ptr_shifted)
+        color = None
 
         x, _, center_points = self.tokenizer(pos, batch, color)
+
         pos = self.pos_embedder(center_points)
+
         x = self.transformer_encoder(x, pos)
+
         encoder_out = self.pooling(x)
 
         if self.obs_is_dict:

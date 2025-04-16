@@ -22,6 +22,7 @@ def build(
 ) -> gym.Env:
     observation_components = observation_type.split("+")
 
+
     if "pointcloud" in observation_components:
         maniskill_obs_mode = "pointcloud"
     elif "rgb" in observation_components or "rgbd" in observation_components:
