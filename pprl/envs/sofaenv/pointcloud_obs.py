@@ -125,6 +125,13 @@ class SofaEnvPointCloudObservations(gym.ObservationWrapper):
 
         pcd = self.pointcloud(observation)
 
+        centered = pcd[:, :3] - pcd[:, :3].mean(axis=0, keepdims=True)
+
+        _, _, vh = np.linalg.svd(centered, full_matrices=False)
+        components = vh.astype(np.float32)  # shape (3, 3)
+
+        pcd = np.concatenate([centered, components], axis=0)
+
         if self.points_only:
             return pcd
         else:

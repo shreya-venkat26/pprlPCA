@@ -148,16 +148,18 @@ class PointCloudWrapper(gym.ObservationWrapper):
 
         centered = pcd[:, :3] - pcd[:, :3].mean(axis=0, keepdims=True)
 
-        scale = np.linalg.norm(centered, axis=1).max()
+        """ we do not want to normalize to unit sphere because scale is guaranteed """
 
-        normalized_and_centered = centered / scale
+        # scale = np.linalg.norm(centered, axis=1).max()
+        #
+        # normalized_and_centered = centered / scale
 
 
-        _, _, vh = np.linalg.svd(normalized_and_centered, full_matrices=False)
+        _, _, vh = np.linalg.svd(centered, full_matrices=False)
         components = vh.astype(np.float32)  # shape (3, 3)
         # dummy = np.array([[-999, -999, -999]])
 
-        pcd = np.concatenate([normalized_and_centered, components], axis=0) # huge correction to unit sphere
+        pcd = np.concatenate([centered, components], axis=0) # huge correction to unit sphere
         # pcd = np.concatenate([pcd, dummy], axis=0)
 
         if self.points_only:

@@ -58,6 +58,19 @@ class PointPatchTransformer(nn.Module):
         else:
             self.state_dim = 0
 
+    def random_SO3(self, points):
+        device, dtype = points.device, points.dtype
+
+        q = torch.randn(4, device=device, dtype=dtype)
+        q = q / q.norm()
+        w, x, y, z = q
+
+        R = torch.tensor([[1-2*(y*y+z*z),   2*(x*y - z*w),     2*(x*z + y*w)],
+                          [2*(x*y + z*w),   1-2*(x*x+z*z),     2*(y*z - x*w)],
+                          [2*(x*z - y*w),   2*(y*z + x*w),     1-2*(x*x+y*y)]], device=device, dtype=dtype)
+        
+        return points @ R.T
+
     def forward(self, observation: ArrayTree[Tensor]) -> Tensor:
 
 
@@ -74,29 +87,38 @@ class PointPatchTransformer(nn.Module):
 
         # preprocessing points to be PCA canonicalized
 
+        PCA = False
+        random_rotation = True
+
 
         correct_points_list = [
             points[ptr[i] : ptr[i+1] - 3, :3]
             for i in range(len(ptr) - 1)
         ] 
 
-        pca_basis_list = [
-            points[ptr[i+1] - 3 : ptr[i+1], :3].T
-            for i in range(len(ptr) - 1)
-        ]
+        if PCA:
+            pca_basis_list = [
+                points[ptr[i+1] - 3 : ptr[i+1], :3].T
+                for i in range(len(ptr) - 1)
+            ]
 
-        pca_bases = torch.stack(pca_basis_list, dim = 0)
-        pca_bases *= (torch.randint(0, 2, (len(pca_basis_list), 3), device=pca_bases.device) * 2 - 1).unsqueeze(1)
+            pca_bases = torch.stack(pca_basis_list, dim = 0)
+            pca_bases *= (torch.randint(0, 2, (len(pca_basis_list), 3), device=pca_bases.device) * 2 - 1).unsqueeze(1)
 
-        """
-        VERY IMPORTANT, PCA COLUMNS ARE THE BASES, AND ORTHOGONALITY HAS BEEN VERIFIED
-        """
+            """
+            VERY IMPORTANT, PCA COLUMNS ARE THE BASES, AND ORTHOGONALITY HAS BEEN VERIFIED
+            """
 
-        pca_basis_list = list(pca_bases)
+            pca_basis_list = list(pca_bases)
 
-        rotated_list = [point_cloud @ pca_basis for point_cloud, pca_basis in zip(correct_points_list, pca_basis_list)]
+            rotated_list = [point_cloud @ pca_basis for point_cloud, pca_basis in zip(correct_points_list, pca_basis_list)]
+        else:
+            rotated_list = correct_points_list
+
 
         rotated_flat = torch.cat(rotated_list, dim=0)
+        if random_rotation:
+            rotated_flat = self.random_SO3(rotated_flat)
 
         ptr_shifted = ptr.clone()
         for i in range(1, len(ptr)):

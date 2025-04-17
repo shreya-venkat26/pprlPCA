@@ -18,6 +18,7 @@ time_step: 0.01
 frame_skip: 10
 max_episode_steps: 300
 
+# camera reset noise is probably +x, -x, +y, -y, +z, -z
 camera_reset_noise: [20.0, 20.0, 20.0, 20.0, 20.0, 20.0]
 settle_steps: 50
 hole_rotation_reset_noise: [0.0, 0.0, 0.0]
