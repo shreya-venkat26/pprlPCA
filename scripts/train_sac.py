@@ -23,6 +23,7 @@ from parllel.torch.algos.sac import build_replay_buffer_tree
 from parllel.torch.distributions.squashed_gaussian import SquashedGaussian
 from parllel.transforms.vectorized_video import RecordVectorizedVideo
 from parllel.types import BatchSpec
+import numpy as np
 
 from pprl.utils.array_dict import build_obs_array
 
@@ -51,6 +52,8 @@ def build(config: DictConfig) -> Iterator[RLRunner]:
         EnvClass=env_factory,
         n_envs=batch_spec.B,
         TrajInfoClass=TrajInfoClass,
+        env_kwargs={"eval_mode": False,
+                    },
         parallel=parallel,
     )
 
@@ -67,7 +70,9 @@ def build(config: DictConfig) -> Iterator[RLRunner]:
     eval_cages, eval_metadata = build_cages(
         EnvClass=env_factory,
         n_envs=config.eval.n_eval_envs,
-        env_kwargs={"add_rendering_to_info": True},
+        env_kwargs={"add_rendering_to_info": True,
+                    "eval_mode": True,
+                    },
         TrajInfoClass=TrajInfoClass,
         parallel=parallel,
     )

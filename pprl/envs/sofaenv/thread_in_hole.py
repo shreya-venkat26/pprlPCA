@@ -31,6 +31,7 @@ def build(
     reward_amount_dict: dict,
     create_scene_kwargs: dict | None = None,
     add_rendering_to_info: bool = False,
+    eval_mode: bool = False,
     **kwargs,
 ) -> gym.Env:
     image_shape = tuple(image_shape)  # type: ignore
@@ -69,6 +70,7 @@ def build(
         hole_position_reset_noise=hole_position_reset_noise,
         insertion_ratio_threshold=insertion_ratio_threshold,
         simple_success_check=simple_success_check,
+        eval_mode = eval_mode,
     )
 
     env = add_env_wrappers(
