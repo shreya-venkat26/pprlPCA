@@ -1626,3 +1626,4 @@ RLRunner: Finished evaluating agent.
 |    elapsed_time      | 1.41e+04 |
 |    elapsed_steps     | 130560   |
 -----------------------------------
+ 13%|█▎        | 133120/1000000 [3:59:05<26:06:52,  9.22steps/s]
