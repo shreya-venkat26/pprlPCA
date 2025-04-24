@@ -1590,4 +1590,39 @@ EvalSampler: Resetting agent.
 Saved video of policy to videos/2025-04-24/jo7lmavq/policy_step_125440.mp4.
 wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
 RLRunner: Finished evaluating agent.
- 13%|█▎        | 128000/1000000 [3:46:39<27:02:13,  8.96steps/s]
+ 13%|█▎        | 128000/1000000 [3:46:39<27:02:13,  8.96steps/s] 13%|█▎        | 130560/1000000 [3:51:11<26:33:48,  9.09steps/s]                                                                 13%|█▎        | 130560/1000000 [3:51:11<26:33:48,  9.09steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 262      |
+|    Return            | 12.4     |
+|    NonzeroRewards    | 262      |
+|    DiscountedReturn  | 12.4     |
+|    Success           | 0.233    |
+| algo/                |          |
+|    critic_loss       | 12.2     |
+|    mean_entropy      | -2.49    |
+|    mean_ent_bonus    | -0.0146  |
+|    max_target_q      | 98.1     |
+|    min_target_q      | 3.92     |
+|    max_reward        | 10.1     |
+|    min_reward        | -2.49    |
+|    chamfer_loss      | 0.00148  |
+|    encoder_grad_norm | 257      |
+|    q1_grad_norm      | 45.7     |
+|    q2_grad_norm      | 43.8     |
+|    actor_loss        | -20.9    |
+|    ent_coeff         | 0.00587  |
+|    ent_coeff_loss    | -7.73    |
+|    pi_grad_norm      | 0.285    |
+|    n_updates         | 30720    |
+| eval/                |          |
+|    Length            | 300      |
+|    Return            | -12.6    |
+|    NonzeroRewards    | 300      |
+|    DiscountedReturn  | -12.6    |
+|    Success           | 0        |
+| time/                |          |
+|    iterations        | 51       |
+|    fps               | 8.97     |
+|    elapsed_time      | 1.39e+04 |
+|    elapsed_steps     | 130560   |
+-----------------------------------

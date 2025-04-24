@@ -38,7 +38,7 @@ def plot_runs(list_of_runs, key_x, key_y, num_bootstrap_samples, filename):
         for x, y in zip(data_x, data_y):
             x_to_ys[x].append(y)
 
-    sorted_xs = x_to_ys.keys()
+    sorted_xs = sorted(x_to_ys.keys())
 
     for x in sorted_xs:
         y_values = x_to_ys[x]
@@ -49,10 +49,11 @@ def plot_runs(list_of_runs, key_x, key_y, num_bootstrap_samples, filename):
         uppers.append(upper)
 
     # Convert to arrays for plotting
-    xs = np.array(list(x_to_ys.keys()))
+    xs = np.array(sorted_xs)
     means = np.array(means)
     lowers = np.array(lowers)
     uppers = np.array(uppers)
+
 
     # Plot with confidence interval
     plt.figure(figsize=(8, 5))

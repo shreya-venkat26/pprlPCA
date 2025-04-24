@@ -1587,4 +1587,7 @@ RLRunner: Finished evaluating agent.
  13%|█▎        | 125440/1000000 [3:46:05<25:41:19,  9.46steps/s]RLRunner: Evaluating agent...
 EvalSampler: Resetting all environments.
 EvalSampler: Resetting agent.
- 13%|█▎        | 125440/1000000 [3:46:20<25:41:19,  9.46steps/s]
+ 13%|█▎        | 125440/1000000 [3:46:20<25:41:19,  9.46steps/s]Saved video of policy to videos/2025-04-24/5ovv122x/policy_step_125440.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+ 13%|█▎        | 128000/1000000 [3:51:22<26:56:05,  8.99steps/s]
