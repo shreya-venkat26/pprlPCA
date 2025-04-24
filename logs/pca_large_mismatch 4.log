@@ -1,0 +1,1484 @@
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: michael-bezick (michael-bezick-purdue-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: Tracking run with wandb version 0.19.9
+wandb: Run data is saved locally in /home/michaelbezick/Repos/pprlPCA/wandb/run-20250424_112128-dqaqbpqj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lucky-glitter-185
+wandb: ⭐️ View project at https://wandb.ai/michael-bezick-purdue-university/pprl
+wandb: 🚀 View run at https://wandb.ai/michael-bezick-purdue-university/pprl/runs/dqaqbpqj
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+Instantiating 20 environments...
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+Environments instantiated.
+Instantiating 4 environments...
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+---------------------------------------
+Checking SOFA_ROOT and SOFAPYTHON3_ROOT
+Using environment variable SOFA_ROOT: /home/michaelbezick/sofa/build/install
+---------------------------------------
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mass.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Correction.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/plugins/ArticulatedSystemPlugin/lib/libArticulatedSystemPlugin.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.Spring.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Constant.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Mapping.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Intersection.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Shader.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SceneUtility.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Projective.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.GL.Component.Rendering3D.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.NonLinear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Backward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.StateContainer.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Response.Contact.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.AnimationLoop.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.ODESolver.Forward.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Visual.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Geometry.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Engine.Select.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Iterative.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Setting.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Solver.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.IO.Mesh.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Mapping.Linear.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Constraint.Lagrangian.Model.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.MechanicalLoad.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Topology.Container.Dynamic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.SolidMechanics.FEM.Elastic.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.LinearSolver.Direct.so
+[INFO]    [PluginManager] Loaded plugin: /home/michaelbezick/sofa/build/install/lib/libSofa.Component.Collision.Detection.Algorithm.so
+[WARNING] [MechanicalObject(unnamed)] Could not read value for data field showColor: 1.0 0.0 1.0 
+[WARNING] [InteractiveCamera(camera)] Too many missing parameters ; taking default ...
+[WARNING] [UncoupledConstraintCorrection(UncoupledConstraintCorrection)] Using 10 as initial compliance
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [FastTetrahedralCorotationalForceField(FastTetrahedralCorotationalForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of FastTetrahedralCorotationalForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+[WARNING] [UniformVelocityDampingForceField(UniformVelocityDampingForceField)] buildStiffnessMatrix not implemented: for compatibility reason, the deprecated API (addKToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of UniformVelocityDampingForceField to ensure right behavior: the function addKToMatrix has been replaced by buildStiffnessMatrix
+[WARNING] [BeamFEMForceField(BeamFEMForceField)] buildDampingMatrix not implemented: for compatibility reason, the deprecated API (addBToMatrix) will be used. This compatibility will disapear in the future, and will cause issues in simulations. Please update the code of BeamFEMForceField to ensure right behavior: the function addBToMatrix has been replaced by buildDampingMatrix
+Environments instantiated.
+BasicSampler: Resetting all environments.
+BasicSampler: Resetting agent.
+AuxPcSAC: Given sampler batch size 2560, training batch size 128, and replay ratio 32, there will be 640 updates per iteration.
+AuxPcSAC: Using learnable entropy coefficient with target entropy of -4
+RLRunner: Starting training...
+RLRunner: Saving log files to /home/michaelbezick/Repos/pprlPCA/wandb/run-20250424_112128-dqaqbpqj/files
+  0%|          | 0/1000000 [00:00<?, ?steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/dqaqbpqj/policy_step_0.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+                                                0%|          | 0/1000000 [00:48<?, ?steps/s]----------------------------------
+| eval/               |          |
+|    Length           | 238      |
+|    Return           | -24.1    |
+|    NonzeroRewards   | 238      |
+|    DiscountedReturn | -24.1    |
+|    Success          | 0.25     |
+| time/               |          |
+|    iterations       | 0        |
+|    fps              | 0        |
+|    elapsed_time     | 48.3     |
+|    elapsed_steps    | 0        |
+----------------------------------
+For the first 10000 steps, agent will use a fixed std of 0.75 for exploration.
+  0%|          | 2560/1000000 [01:44<11:16:23, 24.58steps/s]  0%|          | 2560/1000000 [02:00<11:16:23, 24.58steps/s]  1%|          | 5120/1000000 [02:43<8:25:24, 32.81steps/s]   1%|          | 5120/1000000 [03:00<8:25:24, 32.81steps/s]  1%|          | 7680/1000000 [03:46<7:38:53, 36.04steps/s]                                                             1%|          | 7680/1000000 [03:46<7:38:53, 36.04steps/s]----------------------------------
+| rollout/            |          |
+|    Length           | 300      |
+|    Return           | -63.1    |
+|    NonzeroRewards   | 300      |
+|    DiscountedReturn | -63.1    |
+|    Success          | 0        |
+| time/               |          |
+|    iterations       | 3        |
+|    fps              | 43.1     |
+|    elapsed_time     | 227      |
+|    elapsed_steps    | 7680     |
+----------------------------------
+  1%|          | 7680/1000000 [04:00<7:38:53, 36.04steps/s]  1%|          | 10240/1000000 [08:42<17:10:47, 16.00steps/s]  1%|▏         | 12800/1000000 [13:29<22:01:55, 12.45steps/s]  2%|▏         | 15360/1000000 [18:06<24:33:57, 11.13steps/s]                                                               2%|▏         | 15360/1000000 [18:06<24:33:57, 11.13steps/s]-----------------------------------
+| algo/                |          |
+|    critic_loss       | 0.087    |
+|    mean_entropy      | 2.7      |
+|    mean_ent_bonus    | 0.246    |
+|    max_target_q      | 1.71     |
+|    min_target_q      | -11.8    |
+|    max_reward        | 0.287    |
+|    min_reward        | -1.98    |
+|    chamfer_loss      | 0.00669  |
+|    encoder_grad_norm | 1.64     |
+|    q1_grad_norm      | 0.806    |
+|    q2_grad_norm      | 0.809    |
+|    actor_loss        | -0.611   |
+|    ent_coeff         | 0.091    |
+|    ent_coeff_loss    | -16.1    |
+|    pi_grad_norm      | 0.0789   |
+|    n_updates         | 1920     |
+| rollout/             |          |
+|    Length            | 300      |
+|    Return            | -84      |
+|    NonzeroRewards    | 300      |
+|    DiscountedReturn  | -84      |
+|    Success           | 0        |
+| time/                |          |
+|    iterations        | 6        |
+|    fps               | 8.93     |
+|    elapsed_time      | 1.09e+03 |
+|    elapsed_steps     | 15360    |
+-----------------------------------
+  2%|▏         | 17920/1000000 [22:43<26:07:26, 10.44steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/dqaqbpqj/policy_step_17920.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+  2%|▏         | 20480/1000000 [28:12<28:54:54,  9.41steps/s]  2%|▏         | 23040/1000000 [32:53<29:06:37,  9.32steps/s]                                                               2%|▏         | 23040/1000000 [32:53<29:06:37,  9.32steps/s]-----------------------------------
+| algo/                |          |
+|    critic_loss       | 1.01     |
+|    mean_entropy      | 2.65     |
+|    mean_ent_bonus    | 0.199    |
+|    max_target_q      | 4.1      |
+|    min_target_q      | -32.3    |
+|    max_reward        | 0.886    |
+|    min_reward        | -1.81    |
+|    chamfer_loss      | 0.00404  |
+|    encoder_grad_norm | 14.8     |
+|    q1_grad_norm      | 3.55     |
+|    q2_grad_norm      | 3.48     |
+|    actor_loss        | -1.88    |
+|    ent_coeff         | 0.0751   |
+|    ent_coeff_loss    | -17.2    |
+|    pi_grad_norm      | 0.0558   |
+|    n_updates         | 3840     |
+| eval/                |          |
+|    Length            | 300      |
+|    Return            | -23.2    |
+|    NonzeroRewards    | 300      |
+|    DiscountedReturn  | -23.2    |
+|    Success           | 0        |
+| rollout/             |          |
+|    Length            | 287      |
+|    Return            | -26.7    |
+|    NonzeroRewards    | 287      |
+|    DiscountedReturn  | -26.7    |
+|    Success           | 0.0476   |
+| time/                |          |
+|    iterations        | 9        |
+|    fps               | 8.66     |
+|    elapsed_time      | 1.97e+03 |
+|    elapsed_steps     | 23040    |
+-----------------------------------
+  3%|▎         | 25600/1000000 [37:38<29:23:03,  9.21steps/s]  3%|▎         | 28160/1000000 [42:19<29:24:34,  9.18steps/s]  3%|▎         | 30720/1000000 [47:06<29:36:23,  9.09steps/s]                                                               3%|▎         | 30720/1000000 [47:06<29:36:23,  9.09steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 300      |
+|    Return            | -48.3    |
+|    NonzeroRewards    | 300      |
+|    DiscountedReturn  | -48.3    |
+|    Success           | 0        |
+| algo/                |          |
+|    critic_loss       | 1.13     |
+|    mean_entropy      | 2.56     |
+|    mean_ent_bonus    | 0.159    |
+|    max_target_q      | 5.06     |
+|    min_target_q      | -38.8    |
+|    max_reward        | 1.06     |
+|    min_reward        | -1.77    |
+|    chamfer_loss      | 0.0034   |
+|    encoder_grad_norm | 12.8     |
+|    q1_grad_norm      | 4.12     |
+|    q2_grad_norm      | 4.03     |
+|    actor_loss        | -2.73    |
+|    ent_coeff         | 0.0621   |
+|    ent_coeff_loss    | -18.2    |
+|    pi_grad_norm      | 0.0512   |
+|    n_updates         | 5760     |
+| time/                |          |
+|    iterations        | 12       |
+|    fps               | 8.99     |
+|    elapsed_time      | 2.83e+03 |
+|    elapsed_steps     | 30720    |
+-----------------------------------
+  3%|▎         | 33280/1000000 [51:51<29:37:17,  9.07steps/s]  4%|▎         | 35840/1000000 [56:33<29:31:51,  9.07steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/dqaqbpqj/policy_step_35840.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+  4%|▍         | 38400/1000000 [1:02:01<30:53:41,  8.65steps/s]                                                                 4%|▍         | 38400/1000000 [1:02:01<30:53:41,  8.65steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 279      |
+|    Return            | -44.8    |
+|    NonzeroRewards    | 279      |
+|    DiscountedReturn  | -44.8    |
+|    Success           | 0.0909   |
+| algo/                |          |
+|    critic_loss       | 1.98     |
+|    mean_entropy      | 2.44     |
+|    mean_ent_bonus    | 0.125    |
+|    max_target_q      | 5.4      |
+|    min_target_q      | -31.5    |
+|    max_reward        | 2.19     |
+|    min_reward        | -1.96    |
+|    chamfer_loss      | 0.00299  |
+|    encoder_grad_norm | 18       |
+|    q1_grad_norm      | 4.63     |
+|    q2_grad_norm      | 4.52     |
+|    actor_loss        | -2.98    |
+|    ent_coeff         | 0.0513   |
+|    ent_coeff_loss    | -19.2    |
+|    pi_grad_norm      | 0.0472   |
+|    n_updates         | 7680     |
+| eval/                |          |
+|    Length            | 300      |
+|    Return            | -52.6    |
+|    NonzeroRewards    | 300      |
+|    DiscountedReturn  | -52.6    |
+|    Success           | 0        |
+| time/                |          |
+|    iterations        | 15       |
+|    fps               | 8.59     |
+|    elapsed_time      | 3.72e+03 |
+|    elapsed_steps     | 38400    |
+-----------------------------------
+  4%|▍         | 40960/1000000 [1:06:45<30:26:14,  8.75steps/s]  4%|▍         | 43520/1000000 [1:11:29<30:05:49,  8.83steps/s]  5%|▍         | 46080/1000000 [1:16:14<29:51:12,  8.88steps/s]                                                                 5%|▍         | 46080/1000000 [1:16:14<29:51:12,  8.88steps/s]-----------------------------------
+| algo/                |          |
+|    critic_loss       | 1.2      |
+|    mean_entropy      | 2.29     |
+|    mean_ent_bonus    | 0.0972   |
+|    max_target_q      | 5.47     |
+|    min_target_q      | -25      |
+|    max_reward        | 1.93     |
+|    min_reward        | -1.99    |
+|    chamfer_loss      | 0.00259  |
+|    encoder_grad_norm | 6.79     |
+|    q1_grad_norm      | 2.7      |
+|    q2_grad_norm      | 2.62     |
+|    actor_loss        | -2.4     |
+|    ent_coeff         | 0.0424   |
+|    ent_coeff_loss    | -19.9    |
+|    pi_grad_norm      | 0.0451   |
+|    n_updates         | 9600     |
+| rollout/             |          |
+|    Length            | 300      |
+|    Return            | -48.6    |
+|    NonzeroRewards    | 300      |
+|    DiscountedReturn  | -48.6    |
+|    Success           | 0        |
+| time/                |          |
+|    iterations        | 18       |
+|    fps               | 9        |
+|    elapsed_time      | 4.57e+03 |
+|    elapsed_steps     | 46080    |
+-----------------------------------
+  5%|▍         | 48640/1000000 [1:21:05<29:51:26,  8.85steps/s]  5%|▌         | 51200/1000000 [1:26:01<29:59:00,  8.79steps/s]  5%|▌         | 53760/1000000 [1:30:58<30:04:19,  8.74steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/dqaqbpqj/policy_step_53760.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+                                                                 5%|▌         | 53760/1000000 [1:31:36<30:04:19,  8.74steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 283      |
+|    Return            | -20.3    |
+|    NonzeroRewards    | 283      |
+|    DiscountedReturn  | -20.3    |
+|    Success           | 0.13     |
+| algo/                |          |
+|    critic_loss       | 1.3      |
+|    mean_entropy      | 1.85     |
+|    mean_ent_bonus    | 0.0655   |
+|    max_target_q      | 5.43     |
+|    min_target_q      | -23.1    |
+|    max_reward        | 2.05     |
+|    min_reward        | -1.91    |
+|    chamfer_loss      | 0.00236  |
+|    encoder_grad_norm | 7.76     |
+|    q1_grad_norm      | 2.99     |
+|    q2_grad_norm      | 2.92     |
+|    actor_loss        | -1.73    |
+|    ent_coeff         | 0.0352   |
+|    ent_coeff_loss    | -19.6    |
+|    pi_grad_norm      | 0.107    |
+|    n_updates         | 11520    |
+| eval/                |          |
+|    Length            | 300      |
+|    Return            | -54.9    |
+|    NonzeroRewards    | 300      |
+|    DiscountedReturn  | -54.9    |
+|    Success           | 0        |
+| time/                |          |
+|    iterations        | 21       |
+|    fps               | 8.33     |
+|    elapsed_time      | 5.5e+03  |
+|    elapsed_steps     | 53760    |
+-----------------------------------
+  6%|▌         | 56320/1000000 [1:36:25<31:01:49,  8.45steps/s]  6%|▌         | 58880/1000000 [1:41:01<30:07:54,  8.68steps/s]  6%|▌         | 61440/1000000 [1:45:44<29:40:54,  8.78steps/s]                                                                 6%|▌         | 61440/1000000 [1:45:44<29:40:54,  8.78steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 300      |
+|    Return            | -29.1    |
+|    NonzeroRewards    | 300      |
+|    DiscountedReturn  | -29.1    |
+|    Success           | 0        |
+| algo/                |          |
+|    critic_loss       | 1.25     |
+|    mean_entropy      | 1.56     |
+|    mean_ent_bonus    | 0.0458   |
+|    max_target_q      | 5.95     |
+|    min_target_q      | -22.4    |
+|    max_reward        | 2.22     |
+|    min_reward        | -1.96    |
+|    chamfer_loss      | 0.00222  |
+|    encoder_grad_norm | 7.52     |
+|    q1_grad_norm      | 2.82     |
+|    q2_grad_norm      | 2.75     |
+|    actor_loss        | -1.81    |
+|    ent_coeff         | 0.0292   |
+|    ent_coeff_loss    | -19.7    |
+|    pi_grad_norm      | 0.105    |
+|    n_updates         | 13440    |
+| time/                |          |
+|    iterations        | 24       |
+|    fps               | 9.05     |
+|    elapsed_time      | 6.34e+03 |
+|    elapsed_steps     | 61440    |
+-----------------------------------
+  6%|▋         | 64000/1000000 [1:50:20<29:08:30,  8.92steps/s]  7%|▋         | 66560/1000000 [1:54:49<28:30:10,  9.10steps/s]  7%|▋         | 69120/1000000 [1:59:15<27:58:16,  9.24steps/s]                                                                 7%|▋         | 69120/1000000 [1:59:15<27:58:16,  9.24steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 300      |
+|    Return            | -51.7    |
+|    NonzeroRewards    | 300      |
+|    DiscountedReturn  | -51.7    |
+|    Success           | 0        |
+| algo/                |          |
+|    critic_loss       | 1.17     |
+|    mean_entropy      | 1.23     |
+|    mean_ent_bonus    | 0.0299   |
+|    max_target_q      | 6        |
+|    min_target_q      | -20.4    |
+|    max_reward        | 1.97     |
+|    min_reward        | -1.84    |
+|    chamfer_loss      | 0.00216  |
+|    encoder_grad_norm | 9.82     |
+|    q1_grad_norm      | 3.14     |
+|    q2_grad_norm      | 2.97     |
+|    actor_loss        | -1.39    |
+|    ent_coeff         | 0.0243   |
+|    ent_coeff_loss    | -19.4    |
+|    pi_grad_norm      | 0.107    |
+|    n_updates         | 15360    |
+| time/                |          |
+|    iterations        | 27       |
+|    fps               | 9.47     |
+|    elapsed_time      | 7.16e+03 |
+|    elapsed_steps     | 69120    |
+-----------------------------------
+  7%|▋         | 71680/1000000 [2:03:41<27:33:19,  9.36steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/dqaqbpqj/policy_step_71680.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+  7%|▋         | 74240/1000000 [2:08:26<27:50:06,  9.24steps/s]  8%|▊         | 76800/1000000 [2:12:54<27:27:56,  9.34steps/s]                                                                 8%|▊         | 76800/1000000 [2:12:54<27:27:56,  9.34steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 288      |
+|    Return            | -22.5    |
+|    NonzeroRewards    | 288      |
+|    DiscountedReturn  | -22.5    |
+|    Success           | 0.0476   |
+| algo/                |          |
+|    critic_loss       | 1.4      |
+|    mean_entropy      | 1.08     |
+|    mean_ent_bonus    | 0.022    |
+|    max_target_q      | 5.44     |
+|    min_target_q      | -19.7    |
+|    max_reward        | 2.48     |
+|    min_reward        | -1.92    |
+|    chamfer_loss      | 0.00201  |
+|    encoder_grad_norm | 7.53     |
+|    q1_grad_norm      | 3.41     |
+|    q2_grad_norm      | 3.2      |
+|    actor_loss        | -0.694   |
+|    ent_coeff         | 0.0201   |
+|    ent_coeff_loss    | -19.8    |
+|    pi_grad_norm      | 0.115    |
+|    n_updates         | 17280    |
+| eval/                |          |
+|    Length            | 300      |
+|    Return            | -20.2    |
+|    NonzeroRewards    | 300      |
+|    DiscountedReturn  | -20.2    |
+|    Success           | 0        |
+| time/                |          |
+|    iterations        | 30       |
+|    fps               | 9.38     |
+|    elapsed_time      | 7.97e+03 |
+|    elapsed_steps     | 76800    |
+-----------------------------------
+  8%|▊         | 79360/1000000 [2:17:27<27:21:33,  9.35steps/s]  8%|▊         | 81920/1000000 [2:21:51<26:59:45,  9.45steps/s]  8%|▊         | 84480/1000000 [2:26:22<26:55:25,  9.45steps/s]                                                                 8%|▊         | 84480/1000000 [2:26:22<26:55:25,  9.45steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 264      |
+|    Return            | 19       |
+|    NonzeroRewards    | 264      |
+|    DiscountedReturn  | 19       |
+|    Success           | 0.293    |
+| algo/                |          |
+|    critic_loss       | 1.98     |
+|    mean_entropy      | 0.251    |
+|    mean_ent_bonus    | 0.00441  |
+|    max_target_q      | 6.18     |
+|    min_target_q      | -20.8    |
+|    max_reward        | 3.53     |
+|    min_reward        | -1.99    |
+|    chamfer_loss      | 0.00191  |
+|    encoder_grad_norm | 7.88     |
+|    q1_grad_norm      | 3.74     |
+|    q2_grad_norm      | 3.59     |
+|    actor_loss        | -0.444   |
+|    ent_coeff         | 0.0168   |
+|    ent_coeff_loss    | -17.3    |
+|    pi_grad_norm      | 0.135    |
+|    n_updates         | 19200    |
+| time/                |          |
+|    iterations        | 33       |
+|    fps               | 9.5      |
+|    elapsed_time      | 8.78e+03 |
+|    elapsed_steps     | 84480    |
+-----------------------------------
+  9%|▊         | 87040/1000000 [2:30:51<26:45:46,  9.48steps/s]  9%|▉         | 89600/1000000 [2:35:30<26:57:04,  9.38steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/dqaqbpqj/policy_step_89600.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+  9%|▉         | 92160/1000000 [2:40:35<27:50:08,  9.06steps/s]                                                                 9%|▉         | 92160/1000000 [2:40:35<27:50:08,  9.06steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 218      |
+|    Return            | 48.9     |
+|    NonzeroRewards    | 218      |
+|    DiscountedReturn  | 48.9     |
+|    Success           | 0.519    |
+| algo/                |          |
+|    critic_loss       | 4.07     |
+|    mean_entropy      | -1.4     |
+|    mean_ent_bonus    | -0.0196  |
+|    max_target_q      | 11       |
+|    min_target_q      | -22.5    |
+|    max_reward        | 6.53     |
+|    min_reward        | -2.21    |
+|    chamfer_loss      | 0.00186  |
+|    encoder_grad_norm | 16.7     |
+|    q1_grad_norm      | 7.14     |
+|    q2_grad_norm      | 6.98     |
+|    actor_loss        | -1.63    |
+|    ent_coeff         | 0.0143   |
+|    ent_coeff_loss    | -11      |
+|    pi_grad_norm      | 0.169    |
+|    n_updates         | 21120    |
+| eval/                |          |
+|    Length            | 300      |
+|    Return            | -29      |
+|    NonzeroRewards    | 300      |
+|    DiscountedReturn  | -29      |
+|    Success           | 0        |
+| time/                |          |
+|    iterations        | 36       |
+|    fps               | 9.01     |
+|    elapsed_time      | 9.64e+03 |
+|    elapsed_steps     | 92160    |
+-----------------------------------
+  9%|▉         | 94720/1000000 [2:45:05<27:23:42,  9.18steps/s] 10%|▉         | 97280/1000000 [2:49:42<27:15:49,  9.20steps/s] 10%|▉         | 99840/1000000 [2:54:17<27:05:21,  9.23steps/s]                                                                10%|▉         | 99840/1000000 [2:54:17<27:05:21,  9.23steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 271      |
+|    Return            | -52.4    |
+|    NonzeroRewards    | 271      |
+|    DiscountedReturn  | -52.4    |
+|    Success           | 0.12     |
+| algo/                |          |
+|    critic_loss       | 3.89     |
+|    mean_entropy      | -2.92    |
+|    mean_ent_bonus    | -0.0372  |
+|    max_target_q      | 16.6     |
+|    min_target_q      | -23.2    |
+|    max_reward        | 6.44     |
+|    min_reward        | -2.59    |
+|    chamfer_loss      | 0.00177  |
+|    encoder_grad_norm | 20       |
+|    q1_grad_norm      | 7.98     |
+|    q2_grad_norm      | 7.92     |
+|    actor_loss        | -4.26    |
+|    ent_coeff         | 0.0127   |
+|    ent_coeff_loss    | -4.69    |
+|    pi_grad_norm      | 0.199    |
+|    n_updates         | 23040    |
+| time/                |          |
+|    iterations        | 39       |
+|    fps               | 9.34     |
+|    elapsed_time      | 1.05e+04 |
+|    elapsed_steps     | 99840    |
+-----------------------------------

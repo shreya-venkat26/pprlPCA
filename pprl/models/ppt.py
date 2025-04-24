@@ -88,7 +88,7 @@ class PointPatchTransformer(nn.Module):
         # preprocessing points to be PCA canonicalized
 
         PCA = False
-        random_rotation = True
+        random_rotation = False
 
 
         correct_points_list = [
@@ -117,6 +117,7 @@ class PointPatchTransformer(nn.Module):
 
 
         rotated_flat = torch.cat(rotated_list, dim=0)
+
         if random_rotation:
             rotated_flat = self.random_SO3(rotated_flat)
 
