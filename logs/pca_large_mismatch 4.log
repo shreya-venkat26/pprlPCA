@@ -4507,4 +4507,33 @@ RLRunner: Finished evaluating agent.
 |    elapsed_time      | 8.57e+04 |
 |    elapsed_steps     | 760320   |
 -----------------------------------
- 76%|███████▋  | 762880/1000000 [23:52:28<7:30:16,  8.78steps/s] 77%|███████▋  | 765440/1000000 [23:56:39<7:06:32,  9.17steps/s] 77%|███████▋  | 765440/1000000 [23:56:55<7:06:32,  9.17steps/s]
+ 76%|███████▋  | 762880/1000000 [23:52:28<7:30:16,  8.78steps/s] 77%|███████▋  | 765440/1000000 [23:56:39<7:06:32,  9.17steps/s] 77%|███████▋  | 765440/1000000 [23:56:55<7:06:32,  9.17steps/s] 77%|███████▋  | 768000/1000000 [24:01:21<7:03:02,  9.14steps/s]                                                                 77%|███████▋  | 768000/1000000 [24:01:21<7:03:02,  9.14steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 27.4     |
+|    Return            | 118      |
+|    NonzeroRewards    | 27.4     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.87     |
+|    mean_entropy      | -3.84    |
+|    mean_ent_bonus    | -0.0625  |
+|    max_target_q      | 114      |
+|    min_target_q      | 65.7     |
+|    max_reward        | 104      |
+|    min_reward        | -2.26    |
+|    chamfer_loss      | 0.00105  |
+|    encoder_grad_norm | 25.9     |
+|    q1_grad_norm      | 48.5     |
+|    q2_grad_norm      | 51.5     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0163   |
+|    ent_coeff_loss    | -0.596   |
+|    pi_grad_norm      | 0.452    |
+|    n_updates         | 190080   |
+| time/                |          |
+|    iterations        | 300      |
+|    fps               | 9.54     |
+|    elapsed_time      | 8.65e+04 |
+|    elapsed_steps     | 768000   |
+-----------------------------------
