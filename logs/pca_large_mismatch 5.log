@@ -4477,4 +4477,63 @@ RLRunner: Finished evaluating agent.
 |    elapsed_time      | 8.45e+04 |
 |    elapsed_steps     | 752640   |
 -----------------------------------
- 76%|███████▌  | 755200/1000000 [23:33:47<7:57:36,  8.54steps/s] 76%|███████▌  | 757760/1000000 [23:38:31<7:45:20,  8.68steps/s]
+ 76%|███████▌  | 755200/1000000 [23:33:47<7:57:36,  8.54steps/s] 76%|███████▌  | 757760/1000000 [23:38:31<7:45:20,  8.68steps/s] 76%|███████▌  | 760320/1000000 [23:42:16<7:07:19,  9.35steps/s]                                                                 76%|███████▌  | 760320/1000000 [23:42:16<7:07:19,  9.35steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 48.6     |
+|    Return            | 114      |
+|    NonzeroRewards    | 48.6     |
+|    DiscountedReturn  | 114      |
+|    Success           | 0.972    |
+| algo/                |          |
+|    critic_loss       | 0.949    |
+|    mean_entropy      | -4.11    |
+|    mean_ent_bonus    | -0.0671  |
+|    max_target_q      | 113      |
+|    min_target_q      | 95.1     |
+|    max_reward        | 95.1     |
+|    min_reward        | -2.34    |
+|    chamfer_loss      | 0.00102  |
+|    encoder_grad_norm | 12.8     |
+|    q1_grad_norm      | 38.8     |
+|    q2_grad_norm      | 38.4     |
+|    actor_loss        | -107     |
+|    ent_coeff         | 0.0163   |
+|    ent_coeff_loss    | 0.225    |
+|    pi_grad_norm      | 0.383    |
+|    n_updates         | 188160   |
+| time/                |          |
+|    iterations        | 297      |
+|    fps               | 9.59     |
+|    elapsed_time      | 8.53e+04 |
+|    elapsed_steps     | 760320   |
+-----------------------------------
+ 76%|███████▌  | 760320/1000000 [23:42:32<7:07:19,  9.35steps/s] 76%|███████▋  | 762880/1000000 [23:46:48<7:01:59,  9.36steps/s] 77%|███████▋  | 765440/1000000 [23:51:05<6:50:12,  9.53steps/s] 77%|███████▋  | 768000/1000000 [23:55:28<6:42:58,  9.60steps/s]                                                                 77%|███████▋  | 768000/1000000 [23:55:28<6:42:58,  9.60steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 60.3     |
+|    Return            | 111      |
+|    NonzeroRewards    | 60.3     |
+|    DiscountedReturn  | 111      |
+|    Success           | 0.951    |
+| algo/                |          |
+|    critic_loss       | 0.875    |
+|    mean_entropy      | -4.21    |
+|    mean_ent_bonus    | -0.0731  |
+|    max_target_q      | 113      |
+|    min_target_q      | 94.7     |
+|    max_reward        | 95.8     |
+|    min_reward        | -2.31    |
+|    chamfer_loss      | 0.00101  |
+|    encoder_grad_norm | 12       |
+|    q1_grad_norm      | 37.7     |
+|    q2_grad_norm      | 37.3     |
+|    actor_loss        | -107     |
+|    ent_coeff         | 0.0174   |
+|    ent_coeff_loss    | 0.688    |
+|    pi_grad_norm      | 0.399    |
+|    n_updates         | 190080   |
+| time/                |          |
+|    iterations        | 300      |
+|    fps               | 9.69     |
+|    elapsed_time      | 8.61e+04 |
+|    elapsed_steps     | 768000   |
+-----------------------------------

@@ -4477,4 +4477,34 @@ RLRunner: Finished evaluating agent.
 |    elapsed_time      | 8.5e+04  |
 |    elapsed_steps     | 752640   |
 -----------------------------------
- 76%|███████▌  | 755200/1000000 [23:40:32<7:38:15,  8.90steps/s]
+ 76%|███████▌  | 755200/1000000 [23:40:32<7:38:15,  8.90steps/s] 76%|███████▌  | 757760/1000000 [23:45:07<7:27:42,  9.02steps/s] 76%|███████▌  | 760320/1000000 [23:49:49<7:22:05,  9.04steps/s]                                                                 76%|███████▌  | 760320/1000000 [23:49:49<7:22:05,  9.04steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 44.1     |
+|    Return            | 107      |
+|    NonzeroRewards    | 44.1     |
+|    DiscountedReturn  | 107      |
+|    Success           | 0.948    |
+| algo/                |          |
+|    critic_loss       | 1.88     |
+|    mean_entropy      | -4.27    |
+|    mean_ent_bonus    | -0.0754  |
+|    max_target_q      | 112      |
+|    min_target_q      | 84.4     |
+|    max_reward        | 103      |
+|    min_reward        | -2.79    |
+|    chamfer_loss      | 0.00114  |
+|    encoder_grad_norm | 24.6     |
+|    q1_grad_norm      | 98.2     |
+|    q2_grad_norm      | 96.3     |
+|    actor_loss        | -105     |
+|    ent_coeff         | 0.0177   |
+|    ent_coeff_loss    | 1.16     |
+|    pi_grad_norm      | 0.435    |
+|    n_updates         | 188160   |
+| time/                |          |
+|    iterations        | 297      |
+|    fps               | 9.15     |
+|    elapsed_time      | 8.58e+04 |
+|    elapsed_steps     | 760320   |
+-----------------------------------
+ 76%|███████▋  | 762880/1000000 [23:54:05<7:04:45,  9.30steps/s] 77%|███████▋  | 765440/1000000 [23:58:43<7:01:33,  9.27steps/s]

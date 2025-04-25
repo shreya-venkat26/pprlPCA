@@ -4579,4 +4579,39 @@ RLRunner: Finished evaluating agent.
 |    elapsed_time      | 8.48e+04 |
 |    elapsed_steps     | 775680   |
 -----------------------------------
- 78%|███████▊  | 778240/1000000 [23:37:06<6:59:48,  8.80steps/s] 78%|███████▊  | 780800/1000000 [23:41:39<6:47:17,  8.97steps/s]
+ 78%|███████▊  | 778240/1000000 [23:37:06<6:59:48,  8.80steps/s] 78%|███████▊  | 780800/1000000 [23:41:39<6:47:17,  8.97steps/s] 78%|███████▊  | 783360/1000000 [23:46:05<6:34:19,  9.16steps/s]                                                                 78%|███████▊  | 783360/1000000 [23:46:05<6:34:19,  9.16steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 28.7     |
+|    Return            | 118      |
+|    NonzeroRewards    | 28.7     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 0.982    |
+|    mean_entropy      | -4.04    |
+|    mean_ent_bonus    | -0.0679  |
+|    max_target_q      | 113      |
+|    min_target_q      | 94.8     |
+|    max_reward        | 96.7     |
+|    min_reward        | -2.81    |
+|    chamfer_loss      | 0.000941 |
+|    encoder_grad_norm | 13.3     |
+|    q1_grad_norm      | 33.1     |
+|    q2_grad_norm      | 32.2     |
+|    actor_loss        | -107     |
+|    ent_coeff         | 0.0168   |
+|    ent_coeff_loss    | 0.136    |
+|    pi_grad_norm      | 0.364    |
+|    n_updates         | 193920   |
+| time/                |          |
+|    iterations        | 306      |
+|    fps               | 9.58     |
+|    elapsed_time      | 8.56e+04 |
+|    elapsed_steps     | 783360   |
+-----------------------------------
+ 79%|███████▊  | 785920/1000000 [23:50:37<6:26:18,  9.24steps/s] 79%|███████▉  | 788480/1000000 [23:55:05<6:18:17,  9.32steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/jo7lmavq/policy_step_788480.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
