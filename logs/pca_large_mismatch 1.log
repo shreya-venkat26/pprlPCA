@@ -4507,4 +4507,1995 @@ RLRunner: Finished evaluating agent.
 |    elapsed_time      | 8.58e+04 |
 |    elapsed_steps     | 760320   |
 -----------------------------------
- 76%|███████▋  | 762880/1000000 [23:54:05<7:04:45,  9.30steps/s] 77%|███████▋  | 765440/1000000 [23:58:43<7:01:33,  9.27steps/s]
+ 76%|███████▋  | 762880/1000000 [23:54:05<7:04:45,  9.30steps/s] 77%|███████▋  | 765440/1000000 [23:58:43<7:01:33,  9.27steps/s] 77%|███████▋  | 768000/1000000 [24:03:26<6:59:51,  9.21steps/s]                                                                 77%|███████▋  | 768000/1000000 [24:03:26<6:59:51,  9.21steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 21.4     |
+|    Return            | 118      |
+|    NonzeroRewards    | 21.4     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.39     |
+|    mean_entropy      | -3.95    |
+|    mean_ent_bonus    | -0.07    |
+|    max_target_q      | 112      |
+|    min_target_q      | 74.4     |
+|    max_reward        | 103      |
+|    min_reward        | -2.79    |
+|    chamfer_loss      | 0.00105  |
+|    encoder_grad_norm | 19.4     |
+|    q1_grad_norm      | 97.9     |
+|    q2_grad_norm      | 95.5     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0177   |
+|    ent_coeff_loss    | -0.131   |
+|    pi_grad_norm      | 0.41     |
+|    n_updates         | 190080   |
+| time/                |          |
+|    iterations        | 300      |
+|    fps               | 9.4      |
+|    elapsed_time      | 8.66e+04 |
+|    elapsed_steps     | 768000   |
+-----------------------------------
+ 77%|███████▋  | 770560/1000000 [24:08:11<6:58:31,  9.14steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_770560.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+ 77%|███████▋  | 773120/1000000 [24:13:38<7:14:44,  8.70steps/s] 78%|███████▊  | 775680/1000000 [24:18:19<7:03:48,  8.82steps/s]                                                                 78%|███████▊  | 775680/1000000 [24:18:19<7:03:48,  8.82steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 26.1     |
+|    Return            | 118      |
+|    NonzeroRewards    | 26.1     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.5      |
+|    mean_entropy      | -3.97    |
+|    mean_ent_bonus    | -0.0708  |
+|    max_target_q      | 112      |
+|    min_target_q      | 63.7     |
+|    max_reward        | 103      |
+|    min_reward        | -2.79    |
+|    chamfer_loss      | 0.00104  |
+|    encoder_grad_norm | 20.6     |
+|    q1_grad_norm      | 100      |
+|    q2_grad_norm      | 97.9     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0179   |
+|    ent_coeff_loss    | 0.0426   |
+|    pi_grad_norm      | 0.422    |
+|    n_updates         | 192000   |
+| eval/                |          |
+|    Length            | 35.1     |
+|    Return            | 115      |
+|    NonzeroRewards    | 35.1     |
+|    DiscountedReturn  | 115      |
+|    Success           | 0.97     |
+| time/                |          |
+|    iterations        | 303      |
+|    fps               | 8.6      |
+|    elapsed_time      | 8.75e+04 |
+|    elapsed_steps     | 775680   |
+-----------------------------------
+ 78%|███████▊  | 778240/1000000 [24:22:47<6:49:11,  9.03steps/s] 78%|███████▊  | 780800/1000000 [24:26:51<6:27:45,  9.42steps/s] 78%|███████▊  | 780800/1000000 [24:27:02<6:27:45,  9.42steps/s] 78%|███████▊  | 783360/1000000 [24:31:26<6:24:43,  9.38steps/s]                                                                 78%|███████▊  | 783360/1000000 [24:31:26<6:24:43,  9.38steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 31       |
+|    Return            | 117      |
+|    NonzeroRewards    | 31       |
+|    DiscountedReturn  | 117      |
+|    Success           | 0.996    |
+| algo/                |          |
+|    critic_loss       | 1.84     |
+|    mean_entropy      | -3.97    |
+|    mean_ent_bonus    | -0.0704  |
+|    max_target_q      | 112      |
+|    min_target_q      | 54.8     |
+|    max_reward        | 103      |
+|    min_reward        | -2.8     |
+|    chamfer_loss      | 0.00104  |
+|    encoder_grad_norm | 25.3     |
+|    q1_grad_norm      | 106      |
+|    q2_grad_norm      | 104      |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0177   |
+|    ent_coeff_loss    | 0.0668   |
+|    pi_grad_norm      | 0.407    |
+|    n_updates         | 193920   |
+| time/                |          |
+|    iterations        | 306      |
+|    fps               | 9.76     |
+|    elapsed_time      | 8.83e+04 |
+|    elapsed_steps     | 783360   |
+-----------------------------------
+ 79%|███████▊  | 785920/1000000 [24:36:15<6:26:39,  9.23steps/s] 79%|███████▉  | 788480/1000000 [24:41:07<6:28:19,  9.08steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_788480.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+ 79%|███████▉  | 791040/1000000 [24:46:31<6:40:43,  8.69steps/s]                                                                 79%|███████▉  | 791040/1000000 [24:46:31<6:40:43,  8.69steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 27.4     |
+|    Return            | 118      |
+|    NonzeroRewards    | 27.4     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 2.1      |
+|    mean_entropy      | -3.92    |
+|    mean_ent_bonus    | -0.0706  |
+|    max_target_q      | 112      |
+|    min_target_q      | 50.2     |
+|    max_reward        | 104      |
+|    min_reward        | -2.79    |
+|    chamfer_loss      | 0.00103  |
+|    encoder_grad_norm | 29.2     |
+|    q1_grad_norm      | 102      |
+|    q2_grad_norm      | 100      |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.018    |
+|    ent_coeff_loss    | -0.102   |
+|    pi_grad_norm      | 0.417    |
+|    n_updates         | 195840   |
+| eval/                |          |
+|    Length            | 42.4     |
+|    Return            | 119      |
+|    NonzeroRewards    | 42.4     |
+|    DiscountedReturn  | 119      |
+|    Success           | 1        |
+| time/                |          |
+|    iterations        | 309      |
+|    fps               | 8.49     |
+|    elapsed_time      | 8.92e+04 |
+|    elapsed_steps     | 791040   |
+-----------------------------------
+ 79%|███████▉  | 793600/1000000 [24:51:02<6:26:28,  8.90steps/s] 80%|███████▉  | 796160/1000000 [24:55:44<6:19:20,  8.96steps/s] 80%|███████▉  | 798720/1000000 [25:00:24<6:12:18,  9.01steps/s]                                                                 80%|███████▉  | 798720/1000000 [25:00:24<6:12:18,  9.01steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 26       |
+|    Return            | 118      |
+|    NonzeroRewards    | 26       |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.93     |
+|    mean_entropy      | -3.96    |
+|    mean_ent_bonus    | -0.0723  |
+|    max_target_q      | 112      |
+|    min_target_q      | 48.9     |
+|    max_reward        | 104      |
+|    min_reward        | -2.76    |
+|    chamfer_loss      | 0.00103  |
+|    encoder_grad_norm | 28.9     |
+|    q1_grad_norm      | 103      |
+|    q2_grad_norm      | 102      |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0182   |
+|    ent_coeff_loss    | -0.0252  |
+|    pi_grad_norm      | 0.411    |
+|    n_updates         | 197760   |
+| time/                |          |
+|    iterations        | 312      |
+|    fps               | 9.22     |
+|    elapsed_time      | 9e+04    |
+|    elapsed_steps     | 798720   |
+-----------------------------------
+ 80%|████████  | 801280/1000000 [25:05:29<6:15:40,  8.82steps/s] 80%|████████  | 803840/1000000 [25:10:30<6:14:49,  8.72steps/s] 81%|████████  | 806400/1000000 [25:14:45<5:55:17,  9.08steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+ 81%|████████  | 806400/1000000 [25:15:03<5:55:17,  9.08steps/s]Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_806400.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+                                                                 81%|████████  | 806400/1000000 [25:15:28<5:55:17,  9.08steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 30.1     |
+|    Return            | 117      |
+|    NonzeroRewards    | 30.1     |
+|    DiscountedReturn  | 117      |
+|    Success           | 0.994    |
+| algo/                |          |
+|    critic_loss       | 3.21     |
+|    mean_entropy      | -3.99    |
+|    mean_ent_bonus    | -0.0711  |
+|    max_target_q      | 112      |
+|    min_target_q      | 49.4     |
+|    max_reward        | 104      |
+|    min_reward        | -2.71    |
+|    chamfer_loss      | 0.00105  |
+|    encoder_grad_norm | 260      |
+|    q1_grad_norm      | 108      |
+|    q2_grad_norm      | 112      |
+|    actor_loss        | -105     |
+|    ent_coeff         | 0.0178   |
+|    ent_coeff_loss    | 0.00151  |
+|    pi_grad_norm      | 0.509    |
+|    n_updates         | 199680   |
+| eval/                |          |
+|    Length            | 52.5     |
+|    Return            | 107      |
+|    NonzeroRewards    | 52.5     |
+|    DiscountedReturn  | 107      |
+|    Success           | 0.923    |
+| time/                |          |
+|    iterations        | 315      |
+|    fps               | 8.5      |
+|    elapsed_time      | 9.09e+04 |
+|    elapsed_steps     | 806400   |
+-----------------------------------
+ 81%|████████  | 808960/1000000 [25:20:26<6:12:36,  8.55steps/s] 81%|████████  | 811520/1000000 [25:25:09<6:01:27,  8.69steps/s] 81%|████████▏ | 814080/1000000 [25:30:01<5:55:57,  8.71steps/s]                                                                 81%|████████▏ | 814080/1000000 [25:30:02<5:55:57,  8.71steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 40.7     |
+|    Return            | 116      |
+|    NonzeroRewards    | 40.7     |
+|    DiscountedReturn  | 116      |
+|    Success           | 0.992    |
+| algo/                |          |
+|    critic_loss       | 2.44     |
+|    mean_entropy      | -4.2     |
+|    mean_ent_bonus    | -0.0778  |
+|    max_target_q      | 112      |
+|    min_target_q      | 54       |
+|    max_reward        | 103      |
+|    min_reward        | -2.7     |
+|    chamfer_loss      | 0.00105  |
+|    encoder_grad_norm | 30.5     |
+|    q1_grad_norm      | 106      |
+|    q2_grad_norm      | 100      |
+|    actor_loss        | -104     |
+|    ent_coeff         | 0.0185   |
+|    ent_coeff_loss    | 0.808    |
+|    pi_grad_norm      | 0.442    |
+|    n_updates         | 201600   |
+| time/                |          |
+|    iterations        | 318      |
+|    fps               | 8.79     |
+|    elapsed_time      | 9.18e+04 |
+|    elapsed_steps     | 814080   |
+-----------------------------------
+ 82%|████████▏ | 816640/1000000 [25:34:49<5:48:48,  8.76steps/s] 82%|████████▏ | 819200/1000000 [25:38:58<5:28:27,  9.17steps/s] 82%|████████▏ | 819200/1000000 [25:39:13<5:28:27,  9.17steps/s] 82%|████████▏ | 821760/1000000 [25:43:34<5:22:55,  9.20steps/s]                                                                 82%|████████▏ | 821760/1000000 [25:43:34<5:22:55,  9.20steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 25.3     |
+|    Return            | 118      |
+|    NonzeroRewards    | 25.3     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.7      |
+|    mean_entropy      | -4.09    |
+|    mean_ent_bonus    | -0.0837  |
+|    max_target_q      | 113      |
+|    min_target_q      | 52.8     |
+|    max_reward        | 103      |
+|    min_reward        | -2.68    |
+|    chamfer_loss      | 0.00103  |
+|    encoder_grad_norm | 22.5     |
+|    q1_grad_norm      | 96.5     |
+|    q2_grad_norm      | 92.5     |
+|    actor_loss        | -105     |
+|    ent_coeff         | 0.0205   |
+|    ent_coeff_loss    | 0.354    |
+|    pi_grad_norm      | 0.496    |
+|    n_updates         | 203520   |
+| time/                |          |
+|    iterations        | 321      |
+|    fps               | 9.45     |
+|    elapsed_time      | 9.26e+04 |
+|    elapsed_steps     | 821760   |
+-----------------------------------
+ 82%|████████▏ | 824320/1000000 [25:48:02<5:14:47,  9.30steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_824320.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+ 83%|████████▎ | 826880/1000000 [25:53:18<5:23:52,  8.91steps/s] 83%|████████▎ | 829440/1000000 [25:57:49<5:13:43,  9.06steps/s]                                                                 83%|████████▎ | 829440/1000000 [25:57:49<5:13:43,  9.06steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 38.8     |
+|    Return            | 117      |
+|    NonzeroRewards    | 38.8     |
+|    DiscountedReturn  | 117      |
+|    Success           | 0.995    |
+| algo/                |          |
+|    critic_loss       | 1.6      |
+|    mean_entropy      | -3.94    |
+|    mean_ent_bonus    | -0.0808  |
+|    max_target_q      | 113      |
+|    min_target_q      | 47.3     |
+|    max_reward        | 103      |
+|    min_reward        | -2.7     |
+|    chamfer_loss      | 0.00102  |
+|    encoder_grad_norm | 23.3     |
+|    q1_grad_norm      | 92.8     |
+|    q2_grad_norm      | 91.7     |
+|    actor_loss        | -105     |
+|    ent_coeff         | 0.0205   |
+|    ent_coeff_loss    | -0.219   |
+|    pi_grad_norm      | 0.476    |
+|    n_updates         | 205440   |
+| eval/                |          |
+|    Length            | 41.1     |
+|    Return            | 114      |
+|    NonzeroRewards    | 41.1     |
+|    DiscountedReturn  | 114      |
+|    Success           | 0.964    |
+| time/                |          |
+|    iterations        | 324      |
+|    fps               | 8.98     |
+|    elapsed_time      | 9.35e+04 |
+|    elapsed_steps     | 829440   |
+-----------------------------------
+ 83%|████████▎ | 832000/1000000 [26:02:25<5:06:45,  9.13steps/s] 83%|████████▎ | 834560/1000000 [26:07:04<5:01:42,  9.14steps/s] 84%|████████▎ | 837120/1000000 [26:11:32<4:53:02,  9.26steps/s]                                                                 84%|████████▎ | 837120/1000000 [26:11:32<4:53:02,  9.26steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 25.3     |
+|    Return            | 118      |
+|    NonzeroRewards    | 25.3     |
+|    DiscountedReturn  | 118      |
+|    Success           | 0.997    |
+| algo/                |          |
+|    critic_loss       | 1.54     |
+|    mean_entropy      | -3.95    |
+|    mean_ent_bonus    | -0.0788  |
+|    max_target_q      | 112      |
+|    min_target_q      | 42.4     |
+|    max_reward        | 103      |
+|    min_reward        | -2.68    |
+|    chamfer_loss      | 0.00101  |
+|    encoder_grad_norm | 21.8     |
+|    q1_grad_norm      | 95.5     |
+|    q2_grad_norm      | 94.9     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0199   |
+|    ent_coeff_loss    | -0.136   |
+|    pi_grad_norm      | 0.457    |
+|    n_updates         | 207360   |
+| time/                |          |
+|    iterations        | 327      |
+|    fps               | 9.34     |
+|    elapsed_time      | 9.43e+04 |
+|    elapsed_steps     | 837120   |
+-----------------------------------
+ 84%|████████▍ | 839680/1000000 [26:16:44<4:59:37,  8.92steps/s] 84%|████████▍ | 842240/1000000 [26:21:44<4:58:56,  8.80steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_842240.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+ 84%|████████▍ | 844800/1000000 [26:27:33<5:11:42,  8.30steps/s]                                                                 84%|████████▍ | 844800/1000000 [26:27:33<5:11:42,  8.30steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 34.8     |
+|    Return            | 118      |
+|    NonzeroRewards    | 34.8     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.61     |
+|    mean_entropy      | -3.96    |
+|    mean_ent_bonus    | -0.0777  |
+|    max_target_q      | 113      |
+|    min_target_q      | 40.9     |
+|    max_reward        | 104      |
+|    min_reward        | -2.62    |
+|    chamfer_loss      | 0.00101  |
+|    encoder_grad_norm | 22.2     |
+|    q1_grad_norm      | 99.2     |
+|    q2_grad_norm      | 99.6     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0196   |
+|    ent_coeff_loss    | -0.109   |
+|    pi_grad_norm      | 0.443    |
+|    n_updates         | 209280   |
+| eval/                |          |
+|    Length            | 22.5     |
+|    Return            | 118      |
+|    NonzeroRewards    | 22.5     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| time/                |          |
+|    iterations        | 330      |
+|    fps               | 7.99     |
+|    elapsed_time      | 9.53e+04 |
+|    elapsed_steps     | 844800   |
+-----------------------------------
+ 85%|████████▍ | 847360/1000000 [26:32:29<5:02:40,  8.41steps/s] 85%|████████▍ | 849920/1000000 [26:37:40<4:59:39,  8.35steps/s] 85%|████████▌ | 852480/1000000 [26:42:47<4:54:28,  8.35steps/s]                                                                 85%|████████▌ | 852480/1000000 [26:42:47<4:54:28,  8.35steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 29.1     |
+|    Return            | 118      |
+|    NonzeroRewards    | 29.1     |
+|    DiscountedReturn  | 118      |
+|    Success           | 0.996    |
+| algo/                |          |
+|    critic_loss       | 1.99     |
+|    mean_entropy      | -3.9     |
+|    mean_ent_bonus    | -0.0748  |
+|    max_target_q      | 113      |
+|    min_target_q      | 39.6     |
+|    max_reward        | 104      |
+|    min_reward        | -2.59    |
+|    chamfer_loss      | 0.00102  |
+|    encoder_grad_norm | 26.8     |
+|    q1_grad_norm      | 97.7     |
+|    q2_grad_norm      | 97.8     |
+|    actor_loss        | -105     |
+|    ent_coeff         | 0.0192   |
+|    ent_coeff_loss    | -0.406   |
+|    pi_grad_norm      | 0.436    |
+|    n_updates         | 211200   |
+| time/                |          |
+|    iterations        | 333      |
+|    fps               | 8.41     |
+|    elapsed_time      | 9.62e+04 |
+|    elapsed_steps     | 852480   |
+-----------------------------------
+ 86%|████████▌ | 855040/1000000 [26:48:04<4:52:18,  8.27steps/s] 86%|████████▌ | 857600/1000000 [26:52:31<4:35:12,  8.62steps/s] 86%|████████▌ | 860160/1000000 [26:57:06<4:24:24,  8.81steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_860160.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+                                                                 86%|████████▌ | 860160/1000000 [26:58:01<4:24:24,  8.81steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 27.8     |
+|    Return            | 118      |
+|    NonzeroRewards    | 27.8     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 2.26     |
+|    mean_entropy      | -3.97    |
+|    mean_ent_bonus    | -0.0723  |
+|    max_target_q      | 112      |
+|    min_target_q      | 36.7     |
+|    max_reward        | 103      |
+|    min_reward        | -2.6     |
+|    chamfer_loss      | 0.00106  |
+|    encoder_grad_norm | 31.2     |
+|    q1_grad_norm      | 112      |
+|    q2_grad_norm      | 113      |
+|    actor_loss        | -105     |
+|    ent_coeff         | 0.0182   |
+|    ent_coeff_loss    | -0.0882  |
+|    pi_grad_norm      | 0.428    |
+|    n_updates         | 213120   |
+| eval/                |          |
+|    Length            | 29.3     |
+|    Return            | 118      |
+|    NonzeroRewards    | 29.3     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| time/                |          |
+|    iterations        | 336      |
+|    fps               | 8.4      |
+|    elapsed_time      | 9.71e+04 |
+|    elapsed_steps     | 860160   |
+-----------------------------------
+ 86%|████████▋ | 862720/1000000 [27:03:03<4:37:24,  8.25steps/s] 87%|████████▋ | 865280/1000000 [27:08:13<4:32:10,  8.25steps/s] 87%|████████▋ | 867840/1000000 [27:13:25<4:27:30,  8.23steps/s]                                                                 87%|████████▋ | 867840/1000000 [27:13:25<4:27:30,  8.23steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 26.1     |
+|    Return            | 118      |
+|    NonzeroRewards    | 26.1     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.76     |
+|    mean_entropy      | -4       |
+|    mean_ent_bonus    | -0.0744  |
+|    max_target_q      | 112      |
+|    min_target_q      | 36.7     |
+|    max_reward        | 103      |
+|    min_reward        | -2.65    |
+|    chamfer_loss      | 0.00103  |
+|    encoder_grad_norm | 24.7     |
+|    q1_grad_norm      | 100      |
+|    q2_grad_norm      | 101      |
+|    actor_loss        | -105     |
+|    ent_coeff         | 0.0186   |
+|    ent_coeff_loss    | 0.161    |
+|    pi_grad_norm      | 0.432    |
+|    n_updates         | 215040   |
+| time/                |          |
+|    iterations        | 339      |
+|    fps               | 8.31     |
+|    elapsed_time      | 9.8e+04  |
+|    elapsed_steps     | 867840   |
+-----------------------------------
+ 87%|████████▋ | 870400/1000000 [27:18:29<4:20:25,  8.29steps/s] 87%|████████▋ | 872960/1000000 [27:23:22<4:11:29,  8.42steps/s] 88%|████████▊ | 875520/1000000 [27:27:26<3:51:43,  8.95steps/s]                                                                 88%|████████▊ | 875520/1000000 [27:27:26<3:51:43,  8.95steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 25.6     |
+|    Return            | 118      |
+|    NonzeroRewards    | 25.6     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 2.06     |
+|    mean_entropy      | -3.98    |
+|    mean_ent_bonus    | -0.0747  |
+|    max_target_q      | 112      |
+|    min_target_q      | 33.8     |
+|    max_reward        | 104      |
+|    min_reward        | -2.64    |
+|    chamfer_loss      | 0.00103  |
+|    encoder_grad_norm | 27.7     |
+|    q1_grad_norm      | 103      |
+|    q2_grad_norm      | 103      |
+|    actor_loss        | -105     |
+|    ent_coeff         | 0.0188   |
+|    ent_coeff_loss    | 0.00113  |
+|    pi_grad_norm      | 0.429    |
+|    n_updates         | 216960   |
+| time/                |          |
+|    iterations        | 342      |
+|    fps               | 9.14     |
+|    elapsed_time      | 9.88e+04 |
+|    elapsed_steps     | 875520   |
+-----------------------------------
+ 88%|████████▊ | 875520/1000000 [27:27:43<3:51:43,  8.95steps/s] 88%|████████▊ | 878080/1000000 [27:32:10<3:46:32,  8.97steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_878080.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+ 88%|████████▊ | 880640/1000000 [27:37:20<3:47:31,  8.74steps/s] 88%|████████▊ | 883200/1000000 [27:41:45<3:36:15,  9.00steps/s]                                                                 88%|████████▊ | 883200/1000000 [27:41:45<3:36:15,  9.00steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 41.2     |
+|    Return            | 118      |
+|    NonzeroRewards    | 41.2     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 2.12     |
+|    mean_entropy      | -4.01    |
+|    mean_ent_bonus    | -0.0743  |
+|    max_target_q      | 112      |
+|    min_target_q      | 40.4     |
+|    max_reward        | 103      |
+|    min_reward        | -2.62    |
+|    chamfer_loss      | 0.00103  |
+|    encoder_grad_norm | 27.8     |
+|    q1_grad_norm      | 104      |
+|    q2_grad_norm      | 104      |
+|    actor_loss        | -105     |
+|    ent_coeff         | 0.0185   |
+|    ent_coeff_loss    | 0.128    |
+|    pi_grad_norm      | 0.423    |
+|    n_updates         | 218880   |
+| eval/                |          |
+|    Length            | 43.5     |
+|    Return            | 118      |
+|    NonzeroRewards    | 43.5     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| time/                |          |
+|    iterations        | 345      |
+|    fps               | 8.94     |
+|    elapsed_time      | 9.97e+04 |
+|    elapsed_steps     | 883200   |
+-----------------------------------
+ 89%|████████▊ | 885760/1000000 [27:46:28<3:31:15,  9.01steps/s] 89%|████████▉ | 888320/1000000 [27:50:58<3:23:30,  9.15steps/s] 89%|████████▉ | 890880/1000000 [27:55:29<3:16:50,  9.24steps/s]                                                                 89%|████████▉ | 890880/1000000 [27:55:29<3:16:50,  9.24steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 45.7     |
+|    Return            | 117      |
+|    NonzeroRewards    | 45.7     |
+|    DiscountedReturn  | 117      |
+|    Success           | 0.994    |
+| algo/                |          |
+|    critic_loss       | 1.75     |
+|    mean_entropy      | -3.98    |
+|    mean_ent_bonus    | -0.0752  |
+|    max_target_q      | 112      |
+|    min_target_q      | 51.4     |
+|    max_reward        | 103      |
+|    min_reward        | -2.6     |
+|    chamfer_loss      | 0.00101  |
+|    encoder_grad_norm | 22.9     |
+|    q1_grad_norm      | 101      |
+|    q2_grad_norm      | 102      |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0189   |
+|    ent_coeff_loss    | -0.0566  |
+|    pi_grad_norm      | 0.423    |
+|    n_updates         | 220800   |
+| time/                |          |
+|    iterations        | 348      |
+|    fps               | 9.32     |
+|    elapsed_time      | 1.01e+05 |
+|    elapsed_steps     | 890880   |
+-----------------------------------
+ 89%|████████▉ | 893440/1000000 [27:59:42<3:07:12,  9.49steps/s] 89%|████████▉ | 893440/1000000 [27:59:53<3:07:12,  9.49steps/s] 90%|████████▉ | 896000/1000000 [28:04:42<3:08:50,  9.18steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_896000.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+ 90%|████████▉ | 898560/1000000 [28:10:29<3:17:39,  8.55steps/s]                                                                 90%|████████▉ | 898560/1000000 [28:10:29<3:17:39,  8.55steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 30       |
+|    Return            | 118      |
+|    NonzeroRewards    | 30       |
+|    DiscountedReturn  | 118      |
+|    Success           | 0.997    |
+| algo/                |          |
+|    critic_loss       | 1.7      |
+|    mean_entropy      | -3.93    |
+|    mean_ent_bonus    | -0.0718  |
+|    max_target_q      | 113      |
+|    min_target_q      | 53.9     |
+|    max_reward        | 104      |
+|    min_reward        | -2.68    |
+|    chamfer_loss      | 0.00101  |
+|    encoder_grad_norm | 22.1     |
+|    q1_grad_norm      | 100      |
+|    q2_grad_norm      | 101      |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0183   |
+|    ent_coeff_loss    | -0.211   |
+|    pi_grad_norm      | 0.42     |
+|    n_updates         | 222720   |
+| eval/                |          |
+|    Length            | 25.7     |
+|    Return            | 119      |
+|    NonzeroRewards    | 25.7     |
+|    DiscountedReturn  | 119      |
+|    Success           | 1        |
+| time/                |          |
+|    iterations        | 351      |
+|    fps               | 8.53     |
+|    elapsed_time      | 1.01e+05 |
+|    elapsed_steps     | 898560   |
+-----------------------------------
+ 90%|█████████ | 901120/1000000 [28:15:14<3:09:59,  8.67steps/s] 90%|█████████ | 903680/1000000 [28:19:57<3:02:50,  8.78steps/s] 91%|█████████ | 906240/1000000 [28:24:39<2:56:09,  8.87steps/s]                                                                 91%|█████████ | 906240/1000000 [28:24:39<2:56:09,  8.87steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 25.2     |
+|    Return            | 118      |
+|    NonzeroRewards    | 25.2     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.77     |
+|    mean_entropy      | -3.98    |
+|    mean_ent_bonus    | -0.0715  |
+|    max_target_q      | 113      |
+|    min_target_q      | 55       |
+|    max_reward        | 103      |
+|    min_reward        | -2.66    |
+|    chamfer_loss      | 0.00102  |
+|    encoder_grad_norm | 27.3     |
+|    q1_grad_norm      | 105      |
+|    q2_grad_norm      | 106      |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.018    |
+|    ent_coeff_loss    | 0.00419  |
+|    pi_grad_norm      | 0.421    |
+|    n_updates         | 224640   |
+| time/                |          |
+|    iterations        | 354      |
+|    fps               | 9.03     |
+|    elapsed_time      | 1.02e+05 |
+|    elapsed_steps     | 906240   |
+-----------------------------------
+ 91%|█████████ | 908800/1000000 [28:29:22<2:50:17,  8.93steps/s] 91%|█████████ | 911360/1000000 [28:33:41<2:40:40,  9.19steps/s] 91%|█████████▏| 913920/1000000 [28:38:48<2:40:57,  8.91steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_913920.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+                                                                 91%|█████████▏| 913920/1000000 [28:39:40<2:40:57,  8.91steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 27.7     |
+|    Return            | 118      |
+|    NonzeroRewards    | 27.7     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.51     |
+|    mean_entropy      | -4.04    |
+|    mean_ent_bonus    | -0.076   |
+|    max_target_q      | 113      |
+|    min_target_q      | 55.6     |
+|    max_reward        | 104      |
+|    min_reward        | -2.56    |
+|    chamfer_loss      | 0.00101  |
+|    encoder_grad_norm | 20.3     |
+|    q1_grad_norm      | 92.7     |
+|    q2_grad_norm      | 93.3     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0188   |
+|    ent_coeff_loss    | 0.224    |
+|    pi_grad_norm      | 0.44     |
+|    n_updates         | 226560   |
+| eval/                |          |
+|    Length            | 82.3     |
+|    Return            | 104      |
+|    NonzeroRewards    | 82.3     |
+|    DiscountedReturn  | 104      |
+|    Success           | 0.857    |
+| time/                |          |
+|    iterations        | 357      |
+|    fps               | 8.53     |
+|    elapsed_time      | 1.03e+05 |
+|    elapsed_steps     | 913920   |
+-----------------------------------
+ 92%|█████████▏| 916480/1000000 [28:44:21<2:43:33,  8.51steps/s] 92%|█████████▏| 919040/1000000 [28:49:28<2:39:31,  8.46steps/s] 92%|█████████▏| 921600/1000000 [28:54:39<2:35:50,  8.38steps/s]                                                                 92%|█████████▏| 921600/1000000 [28:54:39<2:35:50,  8.38steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 38.9     |
+|    Return            | 117      |
+|    NonzeroRewards    | 38.9     |
+|    DiscountedReturn  | 117      |
+|    Success           | 0.995    |
+| algo/                |          |
+|    critic_loss       | 1.4      |
+|    mean_entropy      | -3.95    |
+|    mean_ent_bonus    | -0.0727  |
+|    max_target_q      | 113      |
+|    min_target_q      | 53.8     |
+|    max_reward        | 104      |
+|    min_reward        | -2.46    |
+|    chamfer_loss      | 0.00101  |
+|    encoder_grad_norm | 18.6     |
+|    q1_grad_norm      | 99.6     |
+|    q2_grad_norm      | 99.9     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0184   |
+|    ent_coeff_loss    | -0.124   |
+|    pi_grad_norm      | 0.435    |
+|    n_updates         | 228480   |
+| time/                |          |
+|    iterations        | 360      |
+|    fps               | 8.54     |
+|    elapsed_time      | 1.04e+05 |
+|    elapsed_steps     | 921600   |
+-----------------------------------
+ 92%|█████████▏| 924160/1000000 [28:59:52<2:31:55,  8.32steps/s] 93%|█████████▎| 926720/1000000 [29:04:53<2:25:44,  8.38steps/s] 93%|█████████▎| 929280/1000000 [29:09:43<2:18:35,  8.50steps/s]                                                                 93%|█████████▎| 929280/1000000 [29:09:43<2:18:35,  8.50steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 29.2     |
+|    Return            | 118      |
+|    NonzeroRewards    | 29.2     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.53     |
+|    mean_entropy      | -4.02    |
+|    mean_ent_bonus    | -0.0727  |
+|    max_target_q      | 113      |
+|    min_target_q      | 52.3     |
+|    max_reward        | 104      |
+|    min_reward        | -2.45    |
+|    chamfer_loss      | 0.000997 |
+|    encoder_grad_norm | 19.2     |
+|    q1_grad_norm      | 99.1     |
+|    q2_grad_norm      | 99.5     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0181   |
+|    ent_coeff_loss    | 0.127    |
+|    pi_grad_norm      | 0.431    |
+|    n_updates         | 230400   |
+| time/                |          |
+|    iterations        | 363      |
+|    fps               | 8.49     |
+|    elapsed_time      | 1.05e+05 |
+|    elapsed_steps     | 929280   |
+-----------------------------------
+ 93%|█████████▎| 931840/1000000 [29:13:37<2:04:34,  9.12steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+ 93%|█████████▎| 931840/1000000 [29:13:53<2:04:34,  9.12steps/s]Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_931840.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+ 93%|█████████▎| 934400/1000000 [29:18:49<2:03:59,  8.82steps/s] 94%|█████████▎| 936960/1000000 [29:23:21<1:56:49,  8.99steps/s]                                                                 94%|█████████▎| 936960/1000000 [29:23:21<1:56:49,  8.99steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 47.6     |
+|    Return            | 116      |
+|    NonzeroRewards    | 47.6     |
+|    DiscountedReturn  | 116      |
+|    Success           | 0.987    |
+| algo/                |          |
+|    critic_loss       | 1.49     |
+|    mean_entropy      | -3.95    |
+|    mean_ent_bonus    | -0.0724  |
+|    max_target_q      | 113      |
+|    min_target_q      | 49.7     |
+|    max_reward        | 104      |
+|    min_reward        | -2.48    |
+|    chamfer_loss      | 0.000997 |
+|    encoder_grad_norm | 18.9     |
+|    q1_grad_norm      | 95.4     |
+|    q2_grad_norm      | 96       |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0183   |
+|    ent_coeff_loss    | -0.105   |
+|    pi_grad_norm      | 0.43     |
+|    n_updates         | 232320   |
+| eval/                |          |
+|    Length            | 114      |
+|    Return            | 92.5     |
+|    NonzeroRewards    | 114      |
+|    DiscountedReturn  | 92.5     |
+|    Success           | 0.8      |
+| time/                |          |
+|    iterations        | 366      |
+|    fps               | 9.39     |
+|    elapsed_time      | 1.06e+05 |
+|    elapsed_steps     | 936960   |
+-----------------------------------
+ 94%|█████████▍| 939520/1000000 [29:27:57<1:51:02,  9.08steps/s] 94%|█████████▍| 942080/1000000 [29:32:33<1:45:39,  9.14steps/s] 94%|█████████▍| 944640/1000000 [29:36:54<1:38:54,  9.33steps/s]                                                                 94%|█████████▍| 944640/1000000 [29:36:54<1:38:54,  9.33steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 28.7     |
+|    Return            | 118      |
+|    NonzeroRewards    | 28.7     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.62     |
+|    mean_entropy      | -3.96    |
+|    mean_ent_bonus    | -0.0711  |
+|    max_target_q      | 113      |
+|    min_target_q      | 51.8     |
+|    max_reward        | 103      |
+|    min_reward        | -2.54    |
+|    chamfer_loss      | 0.00101  |
+|    encoder_grad_norm | 19.9     |
+|    q1_grad_norm      | 99.5     |
+|    q2_grad_norm      | 100      |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.018    |
+|    ent_coeff_loss    | -0.12    |
+|    pi_grad_norm      | 0.425    |
+|    n_updates         | 234240   |
+| time/                |          |
+|    iterations        | 369      |
+|    fps               | 9.45     |
+|    elapsed_time      | 1.07e+05 |
+|    elapsed_steps     | 944640   |
+-----------------------------------
+ 95%|█████████▍| 947200/1000000 [29:41:21<1:33:33,  9.41steps/s] 95%|█████████▍| 949760/1000000 [29:45:55<1:29:14,  9.38steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_949760.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+ 95%|█████████▌| 952320/1000000 [29:51:22<1:29:42,  8.86steps/s]                                                                 95%|█████████▌| 952320/1000000 [29:51:22<1:29:42,  8.86steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 37.7     |
+|    Return            | 118      |
+|    NonzeroRewards    | 37.7     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.66     |
+|    mean_entropy      | -3.99    |
+|    mean_ent_bonus    | -0.0728  |
+|    max_target_q      | 113      |
+|    min_target_q      | 53.3     |
+|    max_reward        | 103      |
+|    min_reward        | -2.44    |
+|    chamfer_loss      | 0.00104  |
+|    encoder_grad_norm | 25.2     |
+|    q1_grad_norm      | 96.1     |
+|    q2_grad_norm      | 96.8     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0183   |
+|    ent_coeff_loss    | 0.0801   |
+|    pi_grad_norm      | 0.432    |
+|    n_updates         | 236160   |
+| eval/                |          |
+|    Length            | 31       |
+|    Return            | 118      |
+|    NonzeroRewards    | 31       |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| time/                |          |
+|    iterations        | 372      |
+|    fps               | 8.85     |
+|    elapsed_time      | 1.07e+05 |
+|    elapsed_steps     | 952320   |
+-----------------------------------
+ 95%|█████████▌| 954880/1000000 [29:56:11<1:24:53,  8.86steps/s] 96%|█████████▌| 957440/1000000 [30:01:17<1:21:30,  8.70steps/s] 96%|█████████▌| 960000/1000000 [30:06:21<1:17:22,  8.62steps/s]                                                                 96%|█████████▌| 960000/1000000 [30:06:21<1:17:22,  8.62steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 28.7     |
+|    Return            | 118      |
+|    NonzeroRewards    | 28.7     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.78     |
+|    mean_entropy      | -4.04    |
+|    mean_ent_bonus    | -0.0731  |
+|    max_target_q      | 113      |
+|    min_target_q      | 56.4     |
+|    max_reward        | 104      |
+|    min_reward        | -2.38    |
+|    chamfer_loss      | 0.00105  |
+|    encoder_grad_norm | 29       |
+|    q1_grad_norm      | 95       |
+|    q2_grad_norm      | 95.7     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0181   |
+|    ent_coeff_loss    | 0.27     |
+|    pi_grad_norm      | 0.42     |
+|    n_updates         | 238080   |
+| time/                |          |
+|    iterations        | 375      |
+|    fps               | 8.54     |
+|    elapsed_time      | 1.08e+05 |
+|    elapsed_steps     | 960000   |
+-----------------------------------
+ 96%|█████████▋| 962560/1000000 [30:11:26<1:12:59,  8.55steps/s] 97%|█████████▋| 965120/1000000 [30:16:32<1:08:26,  8.49steps/s] 97%|█████████▋| 967680/1000000 [30:21:35<1:03:30,  8.48steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_967680.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+                                                                 97%|█████████▋| 967680/1000000 [30:22:33<1:03:30,  8.48steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 23.2     |
+|    Return            | 118      |
+|    NonzeroRewards    | 23.2     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.46     |
+|    mean_entropy      | -3.91    |
+|    mean_ent_bonus    | -0.0713  |
+|    max_target_q      | 113      |
+|    min_target_q      | 57.3     |
+|    max_reward        | 104      |
+|    min_reward        | -2.41    |
+|    chamfer_loss      | 0.00102  |
+|    encoder_grad_norm | 20.5     |
+|    q1_grad_norm      | 92.2     |
+|    q2_grad_norm      | 93.1     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0182   |
+|    ent_coeff_loss    | -0.266   |
+|    pi_grad_norm      | 0.42     |
+|    n_updates         | 240000   |
+| eval/                |          |
+|    Length            | 22.1     |
+|    Return            | 118      |
+|    NonzeroRewards    | 22.1     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| time/                |          |
+|    iterations        | 378      |
+|    fps               | 7.9      |
+|    elapsed_time      | 1.09e+05 |
+|    elapsed_steps     | 967680   |
+-----------------------------------
+ 97%|█████████▋| 970240/1000000 [30:27:39<1:02:08,  7.98steps/s] 97%|█████████▋| 972800/1000000 [30:32:34<55:23,  8.19steps/s]   98%|█████████▊| 975360/1000000 [30:37:38<49:47,  8.25steps/s]                                                               98%|█████████▊| 975360/1000000 [30:37:38<49:47,  8.25steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 30.3     |
+|    Return            | 118      |
+|    NonzeroRewards    | 30.3     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.71     |
+|    mean_entropy      | -3.9     |
+|    mean_ent_bonus    | -0.0696  |
+|    max_target_q      | 113      |
+|    min_target_q      | 57.7     |
+|    max_reward        | 104      |
+|    min_reward        | -2.46    |
+|    chamfer_loss      | 0.00107  |
+|    encoder_grad_norm | 25.2     |
+|    q1_grad_norm      | 98.3     |
+|    q2_grad_norm      | 98.5     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0178   |
+|    ent_coeff_loss    | -0.3     |
+|    pi_grad_norm      | 0.43     |
+|    n_updates         | 241920   |
+| time/                |          |
+|    iterations        | 381      |
+|    fps               | 8.48     |
+|    elapsed_time      | 1.1e+05  |
+|    elapsed_steps     | 975360   |
+-----------------------------------
+ 98%|█████████▊| 977920/1000000 [30:42:38<44:08,  8.34steps/s] 98%|█████████▊| 980480/1000000 [30:47:29<38:25,  8.47steps/s] 98%|█████████▊| 983040/1000000 [30:52:09<32:38,  8.66steps/s]                                                               98%|█████████▊| 983040/1000000 [30:52:09<32:38,  8.66steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 25.2     |
+|    Return            | 118      |
+|    NonzeroRewards    | 25.2     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.5      |
+|    mean_entropy      | -3.99    |
+|    mean_ent_bonus    | -0.0713  |
+|    max_target_q      | 113      |
+|    min_target_q      | 60.4     |
+|    max_reward        | 104      |
+|    min_reward        | -2.51    |
+|    chamfer_loss      | 0.00104  |
+|    encoder_grad_norm | 20.6     |
+|    q1_grad_norm      | 89.3     |
+|    q2_grad_norm      | 89.5     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0179   |
+|    ent_coeff_loss    | 0.0964   |
+|    pi_grad_norm      | 0.425    |
+|    n_updates         | 243840   |
+| time/                |          |
+|    iterations        | 384      |
+|    fps               | 8.82     |
+|    elapsed_time      | 1.11e+05 |
+|    elapsed_steps     | 983040   |
+-----------------------------------
+ 99%|█████████▊| 985600/1000000 [30:56:40<27:00,  8.88steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_985600.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+ 99%|█████████▉| 988160/1000000 [31:01:52<22:45,  8.67steps/s] 99%|█████████▉| 990720/1000000 [31:06:16<17:16,  8.95steps/s]                                                               99%|█████████▉| 990720/1000000 [31:06:16<17:16,  8.95steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 37.2     |
+|    Return            | 118      |
+|    NonzeroRewards    | 37.2     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.56     |
+|    mean_entropy      | -3.98    |
+|    mean_ent_bonus    | -0.0696  |
+|    max_target_q      | 113      |
+|    min_target_q      | 61.5     |
+|    max_reward        | 104      |
+|    min_reward        | -2.45    |
+|    chamfer_loss      | 0.00102  |
+|    encoder_grad_norm | 20.3     |
+|    q1_grad_norm      | 103      |
+|    q2_grad_norm      | 104      |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0175   |
+|    ent_coeff_loss    | 0.0873   |
+|    pi_grad_norm      | 0.41     |
+|    n_updates         | 245760   |
+| eval/                |          |
+|    Length            | 29       |
+|    Return            | 118      |
+|    NonzeroRewards    | 29       |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| time/                |          |
+|    iterations        | 387      |
+|    fps               | 9.07     |
+|    elapsed_time      | 1.12e+05 |
+|    elapsed_steps     | 990720   |
+-----------------------------------
+ 99%|█████████▉| 993280/1000000 [31:10:38<12:12,  9.18steps/s]100%|█████████▉| 995840/1000000 [31:14:58<07:23,  9.37steps/s]100%|█████████▉| 998400/1000000 [31:19:18<02:48,  9.51steps/s]RLRunner: Evaluating agent...
+EvalSampler: Resetting all environments.
+EvalSampler: Resetting agent.
+Saved video of policy to videos/2025-04-24/knq0wkgz/policy_step_998400.mp4.
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+RLRunner: Finished evaluating agent.
+                                                              100%|█████████▉| 998400/1000000 [31:20:10<02:48,  9.51steps/s]-----------------------------------
+| rollout/             |          |
+|    Length            | 42.8     |
+|    Return            | 118      |
+|    NonzeroRewards    | 42.8     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| algo/                |          |
+|    critic_loss       | 1.49     |
+|    mean_entropy      | -3.9     |
+|    mean_ent_bonus    | -0.0676  |
+|    max_target_q      | 113      |
+|    min_target_q      | 58.7     |
+|    max_reward        | 103      |
+|    min_reward        | -2.49    |
+|    chamfer_loss      | 0.00101  |
+|    encoder_grad_norm | 19       |
+|    q1_grad_norm      | 98.3     |
+|    q2_grad_norm      | 99.1     |
+|    actor_loss        | -106     |
+|    ent_coeff         | 0.0173   |
+|    ent_coeff_loss    | -0.268   |
+|    pi_grad_norm      | 0.406    |
+|    n_updates         | 247680   |
+| eval/                |          |
+|    Length            | 30.5     |
+|    Return            | 118      |
+|    NonzeroRewards    | 30.5     |
+|    DiscountedReturn  | 118      |
+|    Success           | 1        |
+| time/                |          |
+|    iterations        | 390      |
+|    fps               | 9.21     |
+|    elapsed_time      | 1.13e+05 |
+|    elapsed_steps     | 998400   |
+-----------------------------------
+100%|█████████▉| 998400/1000000 [31:20:11<03:00,  8.85steps/s]
+RLRunner: Finished training.
+RLRunner: Log files saved to /home/michaelbezick/Repos/pprlPCA/wandb/run-20250424_112117-knq0wkgz/files
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+[WARNING]: Peg started inside cylinder on reset after 50 steps of letting the simulation settle. Will reset again.
+
+########## SIG 11 - SIGSEGV: segfault ##########
+  sofa::helper::BackTrace::sig(int)
+  PyErr_Fetch
+  on_exit+0
+  PyErr_PrintEx
+  PyRun_SimpleStringFlags
+  Py_RunMain
+  Py_BytesMain
+  __libc_start_main
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          algo/actor_loss █████▇▆▆▆▆▆▃▃▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:        algo/chamfer_loss █▅▅▅▄▃▃▃▃▃▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:         algo/critic_loss ▂▁▁▂▂▄▄▃▃▃▅▇██▆▆▆▅▅▄▃▃▂▁▁▁▁▂▂▁▁▂▂▂▂▁▁▁▁▁
+wandb:   algo/encoder_grad_norm ▂▁▁▁▂▂▂▂▆█▆▅▆▆▅▄▃▃▂▂▂▁▁▁▁▁▂▃▂▂▂▂▂▂▂▂▂▂▂▂
+wandb:           algo/ent_coeff █▄▃▃▂▁▁▂▂▁▂▃▄▄▃▄▄▄▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▄▃
+wandb:      algo/ent_coeff_loss ▃▂▂▁▃▅▆█▇▇█▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+wandb:          algo/max_reward ▁▁▁▁▁▁▁▂▁▄▅▆▇▇██████████████████████████
+wandb:        algo/max_target_q ▁▁▁▁▃▄▄▄▄▇██████████████████████████████
+wandb:      algo/mean_ent_bonus █▇▇▄▃▂▂▃▃▂▁▂▁▁▁▁▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▂▂
+wandb:        algo/mean_entropy ████▅▂▂▁▂▂▂▁▁▁▁▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+wandb:          algo/min_reward ▆▇▇▇█▆▅▆▅▅▅▅▅▄▄▄▄▄▄▃▂▁▁▁▁▂▄▄▅▆▆▆▆▆▆▇▆▇▇▇
+wandb:        algo/min_target_q ▂▁▂▂▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▆▆▇▇▇██▇▇▇▆▆▆▅▅▆▆▆▆▆
+wandb:           algo/n_updates ▁▁▁▁▁▁▂▂▂▃▃▃▃▃▃▄▄▄▄▅▅▅▅▅▅▅▆▆▆▆▇▇▇▇▇▇▇███
+wandb:        algo/pi_grad_norm ▂▁▁▁▂▂▃▃▃▃▃█▇██▇▇▆▆▆▅▅▅▅▅▅▅▆▆▆▆▇▇▇▆▆▆▆▆▆
+wandb:        algo/q1_grad_norm ▁▁▁▁▁▁▁▂▂▃▃▃▃▃▅█▇▇▇▆▆▆▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
+wandb:        algo/q2_grad_norm ▁▁▁▁▁▃▃▃▃▅▆▇███▇▆▆▆▆▆▆▆▅▅▅▅▅▅▅▆▅▆▅▅▅▅▅▅▅
+wandb:    eval/DiscountedReturn ▅▁▅▅▄▃▅▅▅▅▆▅▅██▆███▅█████████████████▇██
+wandb:              eval/Length █████▆██████▂▃▂▃▁▁▁█▁▁▁▁▁▁▁▁▁▁▅▂▂▁▁▁▃▃▁▁
+wandb:      eval/NonzeroRewards ██████▆████▇██▃▅▃▁▁▁▁▁▁▁▁▁▁█▁▁▅▂▂▁▁▁▃▃▁▁
+wandb:              eval/Return ▅▅▁▅▅▄▃▅▅▅▅▆▅▅█▆▇██████████▆██▆█████▇███
+wandb:             eval/Success ▁▁▁▁▁▃▁▁▁▁▃▁▁▇▅██▁████████████▄▇████▇███
+wandb:              global_step ▁▁▁▁▂▂▂▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▅▅▅▅▆▆▆▆▆▆▆▇▇▇▇▇▇█
+wandb: rollout/DiscountedReturn ▃▄▄▄▃▃▃▁▅▆██▇███████████████████████████
+wandb:           rollout/Length ██▇▆▆▇▂▂▁▁▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▁▁▁▂
+wandb:   rollout/NonzeroRewards ████▇▄▄▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▁▁▁▂▁
+wandb:           rollout/Return ▂▂▂▁▁▅▄▃▆▅██████████████████████████████
+wandb:          rollout/Success ▁▂▁▁▁▃▂▅████████████████████████████████
+wandb:        time/elapsed_time ▁▁▁▁▁▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▄▄▅▅▅▅▅▆▆▆▆▇▇▇▇▇▇███
+wandb:                 time/fps ▁█▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+wandb:          time/iterations ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▆▆▇▇███
+wandb: 
+wandb: Run summary:
+wandb:          algo/actor_loss -105.999
+wandb:        algo/chamfer_loss 0.00101
+wandb:         algo/critic_loss 1.48998
+wandb:   algo/encoder_grad_norm 19.03649
+wandb:           algo/ent_coeff 0.01733
+wandb:      algo/ent_coeff_loss -0.26765
+wandb:          algo/max_reward 103.37648
+wandb:        algo/max_target_q 112.78179
+wandb:      algo/mean_ent_bonus -0.06756
+wandb:        algo/mean_entropy -3.89797
+wandb:          algo/min_reward -2.48558
+wandb:        algo/min_target_q 58.70276
+wandb:           algo/n_updates 247680
+wandb:        algo/pi_grad_norm 0.40623
+wandb:        algo/q1_grad_norm 98.28034
+wandb:        algo/q2_grad_norm 99.10825
+wandb:    eval/DiscountedReturn 117.86195
+wandb:              eval/Length 30.52778
+wandb:      eval/NonzeroRewards 30.52778
+wandb:              eval/Return 117.86195
+wandb:             eval/Success 1
+wandb:              global_step 998400
+wandb: rollout/DiscountedReturn 117.58746
+wandb:           rollout/Length 42.8306
+wandb:   rollout/NonzeroRewards 42.8306
+wandb:           rollout/Return 117.58746
+wandb:          rollout/Success 1
+wandb:        time/elapsed_time 112810.945
+wandb:                 time/fps 9.20669
+wandb:          time/iterations 390
+wandb: 
+wandb: 🚀 View run royal-feather-182 at: https://wandb.ai/michael-bezick-purdue-university/pprl/runs/knq0wkgz
+wandb: ⭐️ View project at: https://wandb.ai/michael-bezick-purdue-university/pprl
+wandb: Synced 8 W&B file(s), 57 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20250424_112117-knq0wkgz/logs
+[WARNING] [Sofa.Simulation.Graph] the library has not been cleaned up (sofa::simulation::graph::cleanup() has never been called, see sofa/helper/init.h)
+[WARNING] [SofaSimulationCommon] the library has not been cleaned up (sofa::simulation::common::cleanup() has never been called, see sofa/helper/init.h)
+[WARNING] [SofaSimulationCore] the library has not been cleaned up (sofa::simulation::core::cleanup() has never been called, see sofa/helper/init.h)
+[WARNING] [SofaCore] the library has not been cleaned up (sofa::core::cleanup() has never been called, see sofa/helper/init.h)
+[WARNING] [SofaDefaultType] the library has not been cleaned up (sofa::defaulttype::cleanup() has never been called, see sofa/helper/init.h)
+[WARNING] [SofaHelper] the library has not been cleaned up (sofa::helper::cleanup() has never been called, see sofa/helper/init.h)

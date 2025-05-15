@@ -29,6 +29,38 @@ from pprl.utils.array_dict import build_obs_array
 
 from omegaconf import OmegaConf
 
+"""
+create_scene_kwargs:
+  hole_config:
+    inner_radius: 8.0
+    outer_radius: 25.0
+    height: 30.0
+    young_modulus: 5000.0
+    poisson_ratio: 0.3
+    total_mass: 10.0
+  thread_config:
+    length: 70.0
+    radius: 2.0
+    total_mass: 1.0
+    young_modulus: 1000.0
+    poisson_ratio: 0.3
+    beam_radius: 3.0
+    mechanical_damping: 0.2
+  gripper_config:
+    cartesian_workspace:
+      low: [-100.0, -100.0, 0.0]
+      high: [100.0, 100.0, 200.0]
+    state_reset_noise: [15.0, 15.0, 0.0, 20.0]
+    rcm_reset_noise: null
+    gripper_ptsd_state: [60.0, 0.0, 180.0, 90.0]
+    gripper_rcm_pose: [100.0, 0.0, 150.0, 0.0, 180.0, 0.0]
+  camera_config:
+    placement_kwargs:
+      position: [0.0, -175.0, 120.0]
+      lookAt: [10.0, 0.0, 55.0]
+    vertical_field_of_view: 62.0
+"""
+
 
 @contextmanager
 def build(config: DictConfig) -> Iterator[RLRunner]:
@@ -46,32 +78,38 @@ def build(config: DictConfig) -> Iterator[RLRunner]:
     TrajInfoClass = get_class(traj_info)
     TrajInfoClass.set_discount(discount)
 
+    breakpoint()
+
+    config.env.create_scene_kwargs.camera_config.placement_kwargs.position = [0.0, -175.0, 120.0]
+    config.env.create_scene_kwargs.camera_config.placement_kwargs.lookAt = [10.0, 0.0, 55.0]
+
+    # config['create_scene_kwargs']['camera_config']['placement_kwargs']['position'] = [0.0, -175.0, 120.0]
+    # config['create_scene_kwargs']['camera_config']['placement_kwargs']['lookAt'] = [10.0, 0.0, 55.0]
+
     env_factory = instantiate(config.env, _convert_="partial", _partial_=True)
+
 
     cages, metadata = build_cages(
         EnvClass=env_factory,
         n_envs=batch_spec.B,
         TrajInfoClass=TrajInfoClass,
-        env_kwargs={"eval_mode": False,
-                    },
         parallel=parallel,
     )
 
+
+    config.env.create_scene_kwargs.camera_config.placement_kwargs.position =[200,200 , 200]
+    config.env.create_scene_kwargs.camera_config.placement_kwargs.lookAt = [10.0, 0.0, 55.0]
+
+    # config['create_scene_kwargs']['camera_config']['placement_kwargs']['position'] = [200,200 , 200]
+    # config['create_scene_kwargs']['camera_config']['placement_kwargs']['lookAt'] = [10.0, 0.0, 55.0]
+    env_factory = instantiate(config.env, _convert_="partial", _partial_=True)
+
     """EVAL CAGE"""
-
-    # eval_cfg = OmegaConf.create(OmegaConf.to_container(config.env, resolve=True))
-    #
-    # eval_cfg["env_kwargs"]["camera_cfgs"]["p"] = [0, 0, 2]
-    # eval_cfg["env_kwargs"]["camera_cfgs"]["q"] = [1., 0., 0., 0.] 
-    # eval_cfg["env_kwargs"]["camera_cfgs"]["uid"] = "fixed_view"
-
-    # eval_factory = instantiate(config.env, _convert_="partial", _partial_=True)
 
     eval_cages, eval_metadata = build_cages(
         EnvClass=env_factory,
         n_envs=config.eval.n_eval_envs,
         env_kwargs={"add_rendering_to_info": True,
-                    "eval_mode": True,
                     },
         TrajInfoClass=TrajInfoClass,
         parallel=parallel,
