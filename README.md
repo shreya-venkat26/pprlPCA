@@ -7,7 +7,7 @@ Reinforcement learning on point clouds with representation learning.
 pprl can be installed with Python 3.10. We recommend using conda/mamba to manage your Python environment.
 
 ```
-conda create -n pprl -f env.yaml
+conda env create -n pprl -f env.yaml
 conda activate pprl
 ```
 
