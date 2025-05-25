@@ -32,5 +32,6 @@ eval:
 wandb:
   tags: null
   notes: null
+  group_name: ???
 
 video_path: videos

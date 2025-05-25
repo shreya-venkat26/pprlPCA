@@ -87,7 +87,7 @@ class PointPatchTransformer(nn.Module):
 
         # preprocessing points to be PCA canonicalized
 
-        PCA = False
+        PCA = True
         random_rotation = False
 
 

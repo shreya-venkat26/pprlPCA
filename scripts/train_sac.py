@@ -78,8 +78,9 @@ def build(config: DictConfig) -> Iterator[RLRunner]:
     TrajInfoClass = get_class(traj_info)
     TrajInfoClass.set_discount(discount)
 
-    breakpoint()
 
+    # config.env.camera_reset_noise = [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+    config.env.camera_reset_noise = None 
     config.env.create_scene_kwargs.camera_config.placement_kwargs.position = [0.0, -175.0, 120.0]
     config.env.create_scene_kwargs.camera_config.placement_kwargs.lookAt = [10.0, 0.0, 55.0]
 
@@ -97,7 +98,9 @@ def build(config: DictConfig) -> Iterator[RLRunner]:
     )
 
 
-    config.env.create_scene_kwargs.camera_config.placement_kwargs.position =[200,200 , 200]
+    # config.env.camera_reset_noise = [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+    config.env.camera_reset_noise = None
+    config.env.create_scene_kwargs.camera_config.placement_kwargs.position =[0.,0., 200.]
     config.env.create_scene_kwargs.camera_config.placement_kwargs.lookAt = [10.0, 0.0, 55.0]
 
     # config['create_scene_kwargs']['camera_config']['placement_kwargs']['position'] = [200,200 , 200]
@@ -352,6 +355,8 @@ def main(config: DictConfig) -> None:
         wandb_config = config.pop("wandb", {})
         notes = wandb_config.pop("notes", None)
         tags = wandb_config.pop("tags", None)
+        group_name = wandb_config.pop("group_name", None)
+        print("Group name is: ", group_name)
 
     run = wandb.init(
         project="pprl",
@@ -361,6 +366,7 @@ def main(config: DictConfig) -> None:
         reinit=True,  # required for hydra sweeps with default launcher
         tags=tags,
         notes=notes,
+        group=group_name,
     )
 
     logger.init(
