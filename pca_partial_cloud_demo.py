@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """
 pca_partial_cloud_demo.py
 
@@ -19,7 +20,7 @@ import open3d.core as o3c
 # ------------------------------------------------------------------------------
 # CONFIG
 # ------------------------------------------------------------------------------
-N_VIEWS = 12          # depth images to fuse for the complete cloud
+N_VIEWS = 20         # depth images to fuse for the complete cloud
 IMG_RES = 256         # render resolution
 PARTIAL_FOV = 60      # degrees
 PARTIAL_RAD = 1.1     # camera distance multiplier
