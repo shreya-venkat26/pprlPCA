@@ -13,6 +13,8 @@ from pprl.utils.o3d import np_to_o3d, o3d_to_np
 
 from .. import PointCloudSpace
 
+from pprl.utils.fps import farthest_point_sampling
+
 STATE_KEY = "state"
 
 # These functions and wrappers are adapted/inspired by the ones found in https://github.com/haosulab/ManiSkill2-Learn
@@ -67,6 +69,7 @@ class PointCloudWrapper(gym.ObservationWrapper):
         voxel_grid_size: float | None = None,
         exclude_handle_points: bool = False,
         handle_voxel_grid_size: float | None = None,
+        farthest_point_sample: int | None = None,
         random_downsample: int | None = None,
         obs_frame: Literal["world", "base", "ee"] = "world",
         normalize: bool = False,
@@ -93,6 +96,7 @@ class PointCloudWrapper(gym.ObservationWrapper):
         self.exclude_handle_points = exclude_handle_points
         self.handle_voxel_grid_size = handle_voxel_grid_size
         self.random_downsample = random_downsample
+        self.farthest_point_sample = farthest_point_sample
 
         self.obs_frame = obs_frame
         self.normalize = normalize
@@ -261,6 +265,16 @@ class PointCloudWrapper(gym.ObservationWrapper):
             )
             point_cloud = point_cloud[choice]
 
+        if (
+            self.farthest_point_sample is not None
+            and (num_points := len(point_cloud)) > self.farthest_point_sample
+        ):
+            init_idx = self.env.np_random.integers(num_points)
+            idxs = farthest_point_sampling(
+                point_cloud[:, :3], self.farthest_point_sample, init_idx=init_idx
+            )
+            point_cloud = point_cloud[idxs]
+        
         if self.obs_frame == "base":
             # TODO: not sure if this is always valid
             base_pose = observation["agent"]["base_pose"]
