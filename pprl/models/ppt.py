@@ -68,30 +68,8 @@ class PointPatchTransformer(nn.Module):
         R = torch.tensor([[1-2*(y*y+z*z),   2*(x*y - z*w),     2*(x*z + y*w)],
                           [2*(x*y + z*w),   1-2*(x*x+z*z),     2*(y*z - x*w)],
                           [2*(x*z - y*w),   2*(y*z + x*w),     1-2*(x*x+y*y)]], device=device, dtype=dtype)
-
+        
         return points @ R.T
-
-    def line_distance_sums(self, centered_pcd: Tensor, vec: Tensor) -> tuple[Tensor, Tensor]:
-        proj = centered_pcd @ vec
-        pos_sum = proj[proj >= 0].abs().sum()
-        neg_sum = proj[proj < 0].abs().sum()
-        return pos_sum, neg_sum
-
-    def disambiguate(self, centered_pcd: Tensor, eig_vecs: Tensor) -> Tensor:
-        """
-        Function takes in centered_pcd and returns PCA normalized cloud
-        eig_vecs are row vecs
-        """
-        for i in range(2):
-            pos_sum, neg_sum = self.line_distance_sums(centered_pcd, eig_vecs[i])
-            if neg_sum > pos_sum:
-                eig_vecs[i] *= -1
-        v1 = eig_vecs[0]
-        v2 = eig_vecs[1]
-        v3 = torch.cross(v1, v2)
-        v3 /= v3.norm()
-        eig_vecs = torch.stack([v1, v2, v3], dim=0)
-        return centered_pcd @ eig_vecs.T
 
     def forward(self, observation: ArrayTree[Tensor]) -> Tensor:
 
@@ -120,14 +98,20 @@ class PointPatchTransformer(nn.Module):
 
         if PCA:
             pca_basis_list = [
-                points[ptr[i+1] - 3 : ptr[i+1], :3]
+                points[ptr[i+1] - 3 : ptr[i+1], :3].T
                 for i in range(len(ptr) - 1)
             ]
 
-            rotated_list = [
-                self.disambiguate(point_cloud, pca_basis)
-                for point_cloud, pca_basis in zip(correct_points_list, pca_basis_list)
-            ]
+            pca_bases = torch.stack(pca_basis_list, dim = 0)
+            pca_bases *= (torch.randint(0, 2, (len(pca_basis_list), 3), device=pca_bases.device) * 2 - 1).unsqueeze(1)
+
+            """
+            VERY IMPORTANT, PCA COLUMNS ARE THE BASES, AND ORTHOGONALITY HAS BEEN VERIFIED
+            """
+
+            pca_basis_list = list(pca_bases)
+
+            rotated_list = [point_cloud @ pca_basis for point_cloud, pca_basis in zip(correct_points_list, pca_basis_list)]
         else:
             rotated_list = correct_points_list
 

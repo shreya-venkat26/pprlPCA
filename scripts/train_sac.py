@@ -29,23 +29,6 @@ from pprl.utils.array_dict import build_obs_array
 
 from omegaconf import OmegaConf
 
-
-def quat_mul(q1: np.ndarray, q2: np.ndarray) -> np.ndarray:
-    x1, y1, z1, w1 = q1
-    x2, y2, z2, w2 = q2
-    return np.array([
-        w1 * x2 + x1 * w2 + y1 * z2 - z1 * y2,
-        w1 * y2 - x1 * z2 + y1 * w2 + z1 * x2,
-        w1 * z2 + x1 * y2 - y1 * x2 + z1 * w2,
-        w1 * w2 - x1 * x2 - y1 * y2 - z1 * z2,
-    ])
-
-
-def rotate_vec(q: np.ndarray, v: np.ndarray) -> np.ndarray:
-    q_conj = np.array([-q[0], -q[1], -q[2], q[3]])
-    v_q = np.array([v[0], v[1], v[2], 0.0])
-    return quat_mul(quat_mul(q, v_q), q_conj)[:3]
-
 """
 create_scene_kwargs:
   hole_config:
@@ -96,7 +79,16 @@ def build(config: DictConfig) -> Iterator[RLRunner]:
     TrajInfoClass.set_discount(discount)
 
 
+    # config.env.camera_reset_noise = [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+    config.env.camera_reset_noise = None 
+    config.env.create_scene_kwargs.camera_config.placement_kwargs.position = [0.0, -175.0, 120.0]
+    config.env.create_scene_kwargs.camera_config.placement_kwargs.lookAt = [10.0, 0.0, 55.0]
+
+    # config['create_scene_kwargs']['camera_config']['placement_kwargs']['position'] = [0.0, -175.0, 120.0]
+    # config['create_scene_kwargs']['camera_config']['placement_kwargs']['lookAt'] = [10.0, 0.0, 55.0]
+
     env_factory = instantiate(config.env, _convert_="partial", _partial_=True)
+
 
     cages, metadata = build_cages(
         EnvClass=env_factory,
@@ -105,25 +97,14 @@ def build(config: DictConfig) -> Iterator[RLRunner]:
         parallel=parallel,
     )
 
-    if config.eval_camera_mismatch is not None:
-        camera_cfgs = config.env.env_kwargs.setdefault("camera_cfgs", {})
-        pose = camera_cfgs.setdefault("pose", {"p": [0.0, 0.0, 0.0], "q": [0.0, 0.0, 0.0, 1.0]})
-        p = np.array(pose.get("p", [0.0, 0.0, 0.0]), dtype=float)
-        q = np.array(pose.get("q", [0.0, 0.0, 0.0, 1.0]), dtype=float)
-        mismatch = config.eval_camera_mismatch
-        if "shift" in mismatch:
-            p += np.array(mismatch["shift"], dtype=float)
-        if "view" in mismatch:
-            forward = rotate_vec(q, np.array([0.0, 0.0, 1.0]))
-            p += forward * float(mismatch["view"])
-        if "roll" in mismatch:
-            angle = np.deg2rad(float(mismatch["roll"]))
-            s, c = np.sin(angle / 2.0), np.cos(angle / 2.0)
-            roll_q = np.array([0.0, 0.0, s, c])
-            q = quat_mul(q, roll_q)
-        pose["p"] = p.tolist()
-        pose["q"] = q.tolist()
 
+    # config.env.camera_reset_noise = [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+    config.env.camera_reset_noise = None
+    config.env.create_scene_kwargs.camera_config.placement_kwargs.position =[0.,0., 200.]
+    config.env.create_scene_kwargs.camera_config.placement_kwargs.lookAt = [10.0, 0.0, 55.0]
+
+    # config['create_scene_kwargs']['camera_config']['placement_kwargs']['position'] = [200,200 , 200]
+    # config['create_scene_kwargs']['camera_config']['placement_kwargs']['lookAt'] = [10.0, 0.0, 55.0]
     env_factory = instantiate(config.env, _convert_="partial", _partial_=True)
 
     """EVAL CAGE"""
@@ -131,7 +112,8 @@ def build(config: DictConfig) -> Iterator[RLRunner]:
     eval_cages, eval_metadata = build_cages(
         EnvClass=env_factory,
         n_envs=config.eval.n_eval_envs,
-        env_kwargs={"add_rendering_to_info": True},
+        env_kwargs={"add_rendering_to_info": True,
+                    },
         TrajInfoClass=TrajInfoClass,
         parallel=parallel,
     )
@@ -407,10 +389,8 @@ def main(config: DictConfig) -> None:
     )
     config.update({"video_path": video_path})
 
-    model_path = Path(config.get("model_path", "model.pt"))
     with build(config) as runner:
         runner.run()
-        torch.save(runner.agent.state_dict(), model_path)
 
     logger.close()
     run.finish()  # type: ignore

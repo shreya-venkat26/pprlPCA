@@ -73,22 +73,6 @@ Launch a single training run of PPRL + Aux (PointPatchRL with reconstruction los
 python scripts/train_sac.py env=push_chair model=pointgpt_rl algo=aux_sac
 ```
 
-To reproduce the camera mismatch experiments (4 environments × 6 mismatches, one seed each) run
-
-```
-bash scripts/run_all.sh
-```
-
-Each run stores its weights in `model.pt`.  After any training finishes you can
-evaluate the saved policy on all six camera offsets with:
-
-```
-python scripts/eval_camera_mismatches.py env=push_chair model=ppt algo=aux_sac model_path=model.pt
-```
-
-The evaluation script performs ten rollouts for every mismatch and prints the
-average success rate.
-
 
 If you just want to test to see if everything works (fewer parallel environments, smaller batch size, fewer training steps), run:
 ```

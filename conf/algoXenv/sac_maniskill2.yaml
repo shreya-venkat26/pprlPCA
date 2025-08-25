@@ -13,4 +13,4 @@ batch_T: 640
 # rendering is strange for maniskill envs, so we only use one
 # environment for video recording
 eval:
-  n_eval_envs: 10
+  n_eval_envs: 1
