@@ -20,14 +20,16 @@ q_mlp_head:
   hidden_sizes: [1024, 1024, 1024]
   hidden_nonlinearity: ELU
 device: null
+camera_mismatch: none
+model_path: model.pt
 lr_scheduler_gamma: null
 runner:
   n_steps: 1e6
   log_interval_steps: 10000
-  eval_interval_steps: 20000
+  eval_interval_steps: 200000
 eval:
-  n_eval_envs: 4
-  max_trajectories: 100
+  n_eval_envs: 10
+  max_trajectories: 10
 
 wandb:
   tags: null
